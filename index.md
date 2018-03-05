@@ -6,6 +6,6 @@ permalink:
 
 mitmesugused kavandid ja kontseptsioonid
 
-[Tere, maailm! teenuseplatvormi kontseptsioon](Hello)
+[Tere, maailm! teenuseplatvormi kontseptsioon](Hello)<br>
 [MISP tarkvara kohandamine portaali vajadusteks](MISP)
 
