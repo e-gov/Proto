@@ -1,0 +1,12 @@
+# 
+repo: "https://github.com/e-gov/Teenusplatvorm"
+baseurl: "https://e-gov.github.io/Teenusplatvorm"
+viimatiMuudetud: '5.03.2018'
+
+defaults:
+  -
+    scope:
+      path: "" # Kõik failid
+    values:
+      layout: "Times"
+
