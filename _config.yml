@@ -1,6 +1,6 @@
 # 
-repo: "https://github.com/e-gov/Teenusplatvorm"
-baseurl: "https://e-gov.github.io/Teenusplatvorm"
+repo: "https://github.com/e-gov/Teenuseplatvorm"
+baseurl: "https://e-gov.github.io/Teenuseplatvorm"
 viimatiMuudetud: '5.03.2018'
 
 defaults:
