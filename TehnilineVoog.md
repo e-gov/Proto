@@ -26,7 +26,7 @@ Voog:
  samm | selgitus | tehnoloogia
 ------|----------|-------------- 
 `want Service` | Kasutaja on riigiportaali artikli lehel.<br> Kasutaja on autenditud.<br> Kasutaja vajutab teenuse lingile või nupule. | HTML5, CSS3, Javascript, Bootstrap
-`getService` | Sirvikust läheb päring backend-i.<br> Päringuga haaratakse kaasa sirvikus salvestatud seansiküpsise väärtus (JWT). | Javascript Fetch API* 
+`getService` | Sirvikust läheb päring backend-i.<br> Päringuga haaratakse kaasa sirvikus salvestatud seansiküpsise väärtus (JWT). | Javascript Fetch API (1) 
 `getData` | FormManager kontrollib seansiküpsise ehtsust ja kehtivust;<br> saab seansiküpsisest kätte Kasutaja isikukoodi.<br> Moodustab teenuse esitamiseks vajalike andmete päringu ja saadab selle DataManagerile. | JWS (JSON Web Signature), Java, JSON või XML (päringus DataManager-le) 
 `X-Road Req` | DataManager moodustab X-tee päringu(d) ja saadab selle (need) andmekogu(de)sse. | X-Road, SOAP, WSDL
 `X-Road Res` | DataManager võtab vastu X-tee vastuse(d). | X-Road, SOAP, WSDL
@@ -40,4 +40,4 @@ Voog:
 `OK` | Teenuse tulemandmete salvestamise kinnitus liigub tagasi sirvikusse. | Javascript Fetch API
 
 
-\* vanema nimetusega AJAX-päring. Fetch API on HTML5 AJAX-päringute tegemise uus standardne vahend.
+(1) Vanema nimetusega AJAX-päring. Fetch API on HTML5 AJAX-päringute tegemise uus standardne vahend.

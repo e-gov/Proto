@@ -1,7 +1,7 @@
 # 
 repo: "https://github.com/e-gov/Teenuseplatvorm"
 baseurl: "https://e-gov.github.io/Teenuseplatvorm"
-viimatiMuudetud: '5.03.2018'
+viimatiMuudetud: '6.03.2018'
 
 defaults:
   -
