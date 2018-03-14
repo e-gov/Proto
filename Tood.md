@@ -3,8 +3,12 @@ permalink: Tood
 ---
 
 ## MISP 3 Proof of Concept. Tööde kirjeldus
+{: .no_toc}
 
 14.03.2018
+
+- TOC
+{:toc}
 
 ### Eesmärk
 
