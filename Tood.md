@@ -38,8 +38,8 @@ Joonis 1. Arhitektuuriline ülevaade
 
 #### 2 Tehnilised nõuded
 
-1. Autentimine tehakse eraldi paigaldatud mooduliga (Autentija). Autentimise tulemuseks on JWT-vormingus seansitõend. Seansitõendit hoitakse sirvikus, küpsises. Rakendus peab kontrollima seansitõendi kehtivust. Autentijas hoitakse nimekirja tühistatud seansitõenditest. Autentija kood ja dokumentatsioon [2] on olemas.
-2. Peab arvestama perspektiiviga autentimisel kasutada [TARA teenust](https://e-gov.github.io/TARA-Doku/).
+1. Autentimine lahendada eraldi paigaldatud mooduliga (Autentija). Autentimise tulemuseks on JWT-vormingus seansitõend. Seansitõendit hoitakse sirvikus, küpsises. Rakendus peab kontrollima seansitõendi kehtivust. Autentijas hoitakse nimekirja tühistatud seansitõenditest. Autentija kood ja dokumentatsioon [2] on olemas.
+2. Arvestada perspektiiviga autentimisel kasutada [TARA teenust](https://e-gov.github.io/TARA-Doku/).
 3. Kasutajaliideses kasutada kujundusraamistikku Bootstrap ja EMTA stiililaade [3].
 4. Vormimootorina kasutada MISP 2 olemasolevat Orbeoni.
 5. X-teega suhtlus teostada eraldi komponendiga, võttes aluseks MISP 2 vastava komponendi (joonisel nimetatud Mediatoriks).
