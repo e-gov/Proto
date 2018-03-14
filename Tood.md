@@ -2,22 +2,16 @@
 permalink: Tood
 ---
 
-<img src='img/ARHI-01.PNG' width='600'>
+## MISP 3 Proof of Concept. Tööde kirjeldus
 
-Joonis 1. 
-
-## MISP 3 Proof of Concept
-
-tööde kirjeldus
-
-v 0.1, 14.03.2018
+14.03.2018
 
 ### Eesmärk
 
-Tööde eesmärk on luua tehniline lahendus, koodnimetusega MISP 3, mis põhineb:
+Luua tehniline lahendus, koodnimetusega MISP 3, mis põhineb:
 - MISP2 täiendatud [1] tarkvaral
 - eraldiseisval autentimisteenusel (Autentija)
-- responsive kujundusel, EMTA stiili alusel
+- _responsive_ kujundusel, EMTA stiili alusel
 - "vana" portaali XForms teenusekirjeldustel.
 
 Tehniline lahendus peab võimaldama olemasolevaid portaali teenuseid kasutada:
@@ -34,30 +28,34 @@ Tehniline lahendus peab teostama kasutusvoo:
 6. Kodanik kasutab vormi (teeb toimingu)
 7. MISP 3 salvestab kasutaja toimingu tulemuse vajalikku andmekogusse.
 
+<img src='img/ARHI-01.PNG' width='600'>
+
+Joonis 1. 
+
 ### Tehnilised nõuded
 
 1. Autentimine tehakse eraldi paigaldatud mooduliga (Autentija). Autentimise tulemuseks on JWT-vormingus seansitõend. Seansitõendit hoitakse sirvikus, küpsises. Rakendus peab kontrollima seansitõendi kehtivust. Autentijas hoitakse nimekirja tühistatud seansitõenditest. Autentija kood ja dokumentatsioon [2] on olemas.
 2. Peab arvestama perspektiiviga autentimisel kasutada [TARA teenust](https://e-gov.github.io/TARA-Doku/).
-3. Kasutajaliideses kasutada kujundusraamistikku Bootstrap ja EMTA stiililaade.
-4. Vormimootorina kasutada Orbeon XForms.
+3. Kasutajaliideses kasutada kujundusraamistikku Bootstrap ja EMTA stiililaade [3].
+4. Vormimootorina kasutada MISP 2 olemasolevat Orbeoni.
 5. X-teega suhtlus teostada eraldi komponendiga, võttes aluseks MISP 2 vastava komponendi (joonisel nimetatud Mediatoriks).
-6. MISP 2.0 koodist eemaldada mittevajalik osa (pääsuhaldus, mis ei ole vajalik kodanikuteenustes)
-7. MISP 2.5 paigaldatakse uuest portaalist ja Autentijast eraldi (kuid kasutab sama domeeni).
-8. Portaali peab olema võimalik paigaldada mitu MISP 2.5.
+6. MISP 2 koodist eemaldada mittevajalik osa (pääsuhaldus, mis ei ole vajalik kodanikuteenustes, menüüd ja teenuste nimekirjad, mis ei haaku uue portaali infoarhitektuuriga).
+7. MISP 3 paigaldatakse uuest portaalist ja Autentijast eraldi (kuid kasutab sama domeeni).
+8. MISP 3 peab olema portaali paigaldatav mitmes instantsis (iga instants teostab erinevaid teenuseid).
 
 ### Proof of concept
 
-Tehniline lahendus koostada _proof of concept_ (POC) ulatuses.
+Tehniline lahendus koostada _proof of concept_ (POC) ulatuses. See tähendab, et dokumentatsioon, kujundus jm ei pea olema viimistletud, kuid lahendus peab töötama määral, mis võimaldab veenduda lahenduse ärilises sobivuses ja tehnilises teostatavuses.
 
 ### Tööde koosseis
 
 | nr | töö | selgitus |
 |:-----:|-----|---------|
-|  1  | Autentimise eraldamine | Eraldada autentimine eraldi moodulisse.<br> Autentimismoodul peab võimaldama kasutada nii staatilist portaali kui ka MISP-teenuseid kasutaja ühekordse autentimisega.<br> Võimalusel kasutada JWT kontseptsiooni [aut] ja selle alusel tehtud arendust. |
-|  2  | UI uuendamine | Vahetada MISP-i kujundus välja Bootstrap-põhise, responsive võimalustega kujundusega.<br> Aluseks on tellija antud stiiliraamat koos kujunduselementidega.<br> _Proof-of-concept_ lahenduses ei pea UI olema viimistletud; piisab uue kujunduse teostatavuse demonstreerimisest. |
-|  3  | MISP-i sidumine staatilise portaaliga | 1) Projekteerida mehhanism. millega e-teenus valitakse staatilises portaalis ja valitud teenus antakse kasutaja liikumisel MISP-i ette parameetrina. Portaali koosseisus võib olla rohkem kui üks MISP.<br> 2) Uurida ja katsetada mehhanismi MISP-i kasutajaliidese kasutajale märkamatuks lõimimiseks staatilise portaaliga (iFrame). Kui see osutub probleemseks, siis teostada e-teenuse avamine kas lehevahetusega või eraldi sakil.<br> 3) Kasutajaliidesest eemaldada menüüd, e-teenuste nimekirja kuvamine ja e-teenuse valimine. |
-|  4  | Kasutajagruppide loogika lihtsustamine | Eemaldada pääsuõigustega seotud funktsionaalsus, mis ei ole vajalik kodanikuteenuste osutamiseks. |
-|  5  | Teenuste ülekandmine | Teostada kahe portaalis oleva kodanikuteenuse üleviimine MISP-lahendusse. |
+|  1  | Autentimise eraldamine | Eraldada autentimine eraldi moodulisse.<br> Autentimismoodul peab võimaldama kasutada nii staatilist portaali kui ka MISP-teenuseid kasutaja ühekordse autentimisega. |
+|  2  | UI uuendamine | Vahetada MISP-i kujundus välja Bootstrap-põhise, _responsive_ võimalustega kujundusega.<br> Aluseks on tellija antud stiiliraamat koos kujunduselementidega. |
+|  3  | MISP-i sidumine staatilise portaaliga |  |
+|  4  | Mittevajaliku pääsuhalduse eemaldamine | Eemaldada kodanikuteenuste osutamiseks mittevajalik funktsionaalsus. |
+|  5  | Teenuste ülekandmine | Viia vähemalt kaks vanas portaalis olevat kodanikuteenust üle uude lahendusse. |
 
 ### Üleantavad tulemid
 
@@ -71,4 +69,5 @@ Tehniline lahendus koostada _proof of concept_ (POC) ulatuses.
 #### Viited
 
 [1] Aktors OÜ (2015) MISP2 arhitektuur v 1.10.<br>
-[2] Riigi Infosüsteemi Amet (2017) eesti.ee autentimislahenduse tehniline lähteülesanne.
+[2] Riigi Infosüsteemi Amet (2017) eesti.ee autentimislahenduse tehniline lähteülesanne.<br>
+[3] EMTA (2018) Kujunduslahendus.
