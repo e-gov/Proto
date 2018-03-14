@@ -10,10 +10,10 @@ permalink: Tood
 - TOC
 {:toc}
 
-### Eesmärk
+#### 1 Eesmärk
 
 Luua tehniline lahendus, koodnimetusega MISP 3, mis põhineb:
-- MISP2 täiendatud [1] tarkvaral
+- MISP2 [1] täiendatud tarkvaral
 - eraldiseisval autentimisteenusel (Autentija)
 - _responsive_ kujundusel, EMTA stiili alusel
 - "vana" portaali XForms teenusekirjeldustel.
@@ -34,9 +34,9 @@ Tehniline lahendus peab teostama kasutusvoo:
 
 <img src='img/ARHI-01.PNG' width='600'>
 
-Joonis 1. 
+Joonis 1. Arhitektuuriline ülevaade
 
-### Tehnilised nõuded
+#### 2 Tehnilised nõuded
 
 1. Autentimine tehakse eraldi paigaldatud mooduliga (Autentija). Autentimise tulemuseks on JWT-vormingus seansitõend. Seansitõendit hoitakse sirvikus, küpsises. Rakendus peab kontrollima seansitõendi kehtivust. Autentijas hoitakse nimekirja tühistatud seansitõenditest. Autentija kood ja dokumentatsioon [2] on olemas.
 2. Peab arvestama perspektiiviga autentimisel kasutada [TARA teenust](https://e-gov.github.io/TARA-Doku/).
@@ -47,11 +47,11 @@ Joonis 1.
 7. MISP 3 paigaldatakse uuest portaalist ja Autentijast eraldi (kuid kasutab sama domeeni).
 8. MISP 3 peab olema portaali paigaldatav mitmes instantsis (iga instants teostab erinevaid teenuseid).
 
-### Proof of concept
+#### 3 Proof of concept
 
-Tehniline lahendus koostada _proof of concept_ (POC) ulatuses. See tähendab, et dokumentatsioon, kujundus jm ei pea olema viimistletud, kuid lahendus peab töötama määral, mis võimaldab veenduda lahenduse ärilises sobivuses ja tehnilises teostatavuses.
+Tehniline lahendus koostada _proof of concept_ (POC) ulatuses. See tähendab, et dokumentatsioon, kujundus jm ei pea olema viimistletud, kuid lahendus peab töötama määral, mis võimaldab tellijal veenduda lahenduse ärilises sobivuses ja tehnilises teostatavuses.
 
-### Tööde koosseis
+#### 4 Tööde koosseis
 
 | nr | töö | selgitus |
 |:-----:|-----|---------|
@@ -61,14 +61,14 @@ Tehniline lahendus koostada _proof of concept_ (POC) ulatuses. See tähendab, et
 |  4  | Mittevajaliku pääsuhalduse eemaldamine | Eemaldada kodanikuteenuste osutamiseks mittevajalik funktsionaalsus. |
 |  5  | Teenuste ülekandmine | Viia vähemalt kaks vanas portaalis olevat kodanikuteenust üle uude lahendusse. |
 
-### Üleantavad tulemid
+#### 5 Üleantavad tulemid
 
 | nr | tulem | selgitus |
 |:-----:|-----|---------|
-|  1    | arhitektuuridokument | esitab ja spetsifitseerib: lahenduse eesmärgi, liidesed, komponentide koosseisu ja tehnilised omadused, toetatud kasutuslood, sõnumivahetuse jms tehnilised vood; sisaldab arhitektuurijoonist; võib olla nimetatud tehniliseks spetsifikatsiooniks. Ei pea olema viimistletud. |
+|  1    | arhitektuuridokument | esitab ja spetsifitseerib lahenduse eesmärgi, liidesed, komponentide koosseisu ja tehnilised omadused, toetatud kasutuslood, sõnumivahetuse jms tehnilised vood; sisaldab arhitektuurijoonist; võib olla nimetatud tehniliseks spetsifikatsiooniks. Ei pea olema viimistletud. |
 |  2    | paigaldusjuhend |  |
 |  3    | töötav kood |  |
-|  4    | POC lahenduse esitlus tellijale | |
+|  4    | lahenduse esitlus tellijale | |
 
 #### Viited
 
