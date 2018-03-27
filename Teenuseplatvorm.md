@@ -9,21 +9,19 @@ layout: Suur
 
 ## Mida pakume?
 
-(vt joonis)
-
 1  Lihtsat ligipääsu X-teele
 - "X-tee vahendaja" toob teenusele vajalikud andmed X-tee andmekogudest
 - andmed esitatakse JSON või lihtsas XML vormingus
 - ei pea paigaldama ega haldama turvaserverit
 - ei pea ise taotlema pääsuõigusi X-teel
 
-2  Tipptasemel stiiliraamatut ja UI komponente selle teostamiseks
+2  Tipptasemel stiiliraamatut ja komponente UI teostamiseks
 - kasutaja ei pea teenuse UI-d õppima
 - stiililine ühtesobivus teiste teenustega
-- kohandamise ja oma stiili võimalus
+- oma stiili ja kohandamise võimalus
 
 3  Teenuse kasutaja isiku tuvastamist
-- soovi korral SSO platvormil majutatud teenuste piires
+- soovi korral SSO-d, platvormil majutatud teenuste piires
 - erinevad autentimisviisid
 - piiriülene (eIDAS) autentimine
 
@@ -33,7 +31,7 @@ layout: Suur
 
 5  Teenuse ülesleitavust ja konteksti
 - koht 3000 riigi infosüsteemi tutvustava artikli ja 100+ teenuse seas
-- koht kodanikuteenuste teemakataloogis
+- esindatus kodanikuteenuste teemakataloogis
 - riigiportaali otsimootoris kajastamine
 
 6  Teenusekäituse tugiteenust 
@@ -43,7 +41,7 @@ layout: Suur
 - intsidendilahendus
 - kasutajatugi 
 - infoturve
-- + ca 10-15 erinevat lisateenust
+- \+ ca 10-15 erinevat lisateenust
 
 ## Tehnoloogiline protsess
 
