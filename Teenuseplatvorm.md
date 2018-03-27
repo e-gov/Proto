@@ -1,5 +1,6 @@
 ---
 permalink: Teenuseplatvorm
+layout: Suur
 ---
 
 # Teenuseplatvormi kontseptsioon
@@ -11,7 +12,8 @@ permalink: Teenuseplatvorm
 (vt joonis)
 
 1  Lihtsat ligipääsu X-teele
-- "X-tee vahendaja" toob teenusele vajalikud andmed X-tee andmekogudest; andmed esitatakse JSON või lihtsas XML vormingus
+- "X-tee vahendaja" toob teenusele vajalikud andmed X-tee andmekogudest
+- andmed esitatakse JSON või lihtsas XML vormingus
 - ei pea paigaldama ega haldama turvaserverit
 - ei pea ise taotlema pääsuõigusi X-teel
 
@@ -20,24 +22,28 @@ permalink: Teenuseplatvorm
 - stiililine ühtesobivus teiste teenustega
 - kohandamise ja oma stiili võimalus
 
-3  teenuse kasutaja autentimine
+3  Teenuse kasutaja isiku tuvastamist
 - soovi korral SSO platvormil majutatud teenuste piires
 - erinevad autentimisviisid
 - piiriülene (eIDAS) autentimine
 
-4  mallid teenuse äriloogika realiseerimiseks
-- Angular + Java
+4  Malle teenuse äriloogika realiseerimiseks
+- Angular
+- Java
 
-5  teenuse ülesleitavus ja kontekst
-- koht 3000 riigi infosüsteemi tutvustava artikli ja 100+ teenuse hulgas
+5  Teenuse ülesleitavust ja konteksti
+- koht 3000 riigi infosüsteemi tutvustava artikli ja 100+ teenuse seas
 - koht kodanikuteenuste teemakataloogis
-- otsimootoris kajastamine
+- riigiportaali otsimootoris kajastamine
 
-6  teenuse käitamine
-- ei pea ise käitama
+6  Teenusekäituse tugiteenust 
+- te ei pea ise käitama
+- ITIL standard
 - monitooring
 - intsidendilahendus
 - kasutajatugi 
+- infoturve
+- + ca 10-15 erinevat lisateenust
 
 ## Tehnoloogiline protsess
 
