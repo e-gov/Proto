@@ -4,7 +4,7 @@ permalink: Teenuseplatvorm
 
 # Teenuseplatvormi kontseptsioon
 
-<img src='img/Teenuseplatvorm.PNG' width='600'>
+<img src='img/Teenuseplatvorm.PNG' width='1200'>
 
 ## Mida pakume?
 
