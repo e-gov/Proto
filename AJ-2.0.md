@@ -166,15 +166,13 @@ Andmekogude ümbertegemine selliseid andmeid tootma panemiseks oleks aga hinnang
 
 ### 2.6 "AJ teenusena"
 
-#### 2.6.1 Konfigureerimise, paigaldamise ja haldamise talumatu kergus
+#### 2.6.1 Konfigureerimine, paigaldamine ja haldamine kui kasutuselevõtu barjäärid
 
 AJ praegune versioon on arendatud tarkvarana, mida asutus peab oma infosüsteemidega ja oma IT-taristusse sobitama, konfigureerima ja paigaldama. Praegune tarkvara on tehtud paindlikuna, seda saab paigaldada mitmel erineval viisil, suuremas või väiksemas komplektis. See nagu peaks suurendama tarkvara kasutust, kuid samas lisab keerukust. AJ tarkvara ise ei ole keeruline,selles ei ole erilisi algoritme. Tegu on nn plumbing tüüpi lahendusega. Seetõttu on paljudel asutustel kiusatus teostada AJ funktsionaalsus ise.
 
-Paljudele asutustele on takistuseks isikuandmeid töötlevate infosüsteemide suur arv. Kümnetes.
-AJ on projekteeritud paigaldatavana ühe andmekogu külge (selle põhjuseks 2016. a oli tahtmine hoida disain lihtsana ja vältida "superandmebaasi" teket).
-Asutus peab paigaldama Postgre andmebaasi, turvama ja haldama seda. 40 infosüsteemi puhul on vaja 40 AJ instantsi. Seetõttu tuntakse huvi (Tallinna Linnavalitsus), kas AJ saaks toetada enamat kui üht andmekogu.
+Paljudele asutustele on takistuseks isikuandmeid töötlevate infosüsteemide suur arv (kümnetes). AJ on projekteeritud paigaldatavana ühe andmekogu külge. Selle põhjuseks 2016. a oli tahtmine hoida disain lihtsana ja vältida "superandmebaasi" teket. Asutus peab paigaldama PostgreSQL andmebaasi, turvama ja haldama seda. 40 infosüsteemi puhul on vaja 40 AJ instantsi. Seetõttu tuntakse huvi (Tallinna Linnavalitsus), kas AJ saaks toetada enamat kui üht andmekogu. 
 
-Oskusliku seadistusega võiks see isegi praegu olla võimalik (andmete hoidmine ühes PostgreSQL instantsis, eraldi schema-des). Kuid ei tohi alahinnata barjääri, mida keerukama konfigureerimise vajadus AJ kasutuselevõtmisele püstitab. (2016. a viidi läbi AJ paigaldamine viies pilootasutuses. Need olid tavalisemast kõrgema IT-võimekusega asutused. Kuid ka neis võttis AJ seadistamine ja paigaldamine kuid).
+Praegu otseselt ei saa. Oskusliku seadistusega võiks isegi praegu saada (andmete hoidmine ühes PostgreSQL instantsis, eraldi schema-des). Kuid ei tohi alahinnata barjääri, mida keerukama konfigureerimise vajadus AJ kasutuselevõtmisele püstitab. Näiteks, 2016. a viidi läbi AJ paigaldamine viies pilootasutuses. Need olid tavalisemast kõrgema IT-võimekusega asutused. Kuid ka neis võttis AJ seadistamine ja paigaldamine pool aastat või enamgi.
 
 *Paigaldamist nõudva tarkvara arendamine ei ole perspektiivne. Kuigi "põhimõtteliselt" lihtne, on tänapäeva keerukates taristutes tarkvara endale paigaldamine seotud raskesti kokkuarvutatavate, kuid märgatavate kuludega.*
 
