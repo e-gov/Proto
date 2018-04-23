@@ -16,7 +16,7 @@ Vaadeldud võimalustest kõige atraktiivsem tundub AJ pakkumine teenusena. Ideed
 
 ## 1 Sissejuhatus
 
-### 1.1 kontekst
+### 1.1 Kontekst
 
 Andmejälgija (AJ), on 2015-2016 RIA poolt arendatud isikuandmete kasutuse jälgimise originaalne lahendus.
 
@@ -50,7 +50,7 @@ Võib päris kindlalt väita, et AJ ja analoogilised lahendused aitavad teha e-r
 
 ## 2 Andmejälgija
 
-Andmejälgija ([https://github.com/e-gov/AJ](https://github.com/e-gov/AJ)) on modulaarse arhitektuuriga standardne lahendus. AJ on kasutusel 4-5 asutuses.
+Andmejälgija ([https://github.com/e-gov/AJ](https://github.com/e-gov/AJ)) on modulaarse arhitektuuriga standardne lahendus. 
 
 ### 2.1 Komponendid
 
@@ -59,7 +59,8 @@ AJ komponendid on:
 - _Eraldusfilter_ püüab isikuandmete kasutusfakte välja X-tee andmeliiklusest
 - _Andmesalvestaja_ kogub ja säilitab isikuandmete kasutusfakte
 - _Sisekontrollija rakendus_ võimaldab kogutud kasutusfakte kontrollide asutuse sisekontrolli eesmärkidel
-- _Esitusteenus_ võimaldab andmesubjektil eesti.ee-s vaadata isikuandmete kasutusi.  
+- _Esitusteenus_ võimaldab andmesubjektil eesti.ee-s vaadata isikuandmete kasutusi.
+
 AJ on ühtaegu nii:
 
 - andmevorming
@@ -69,7 +70,7 @@ AJ on ühtaegu nii:
 
 ### 2.2 Ühtlustatud andmevorming
 
-AJ isikuandmete kasutusandmete ühtlustajana. See on oluline. Ühtlustatud andmevorming võimaldab andmete andmesubjektile näitamist automatiseerida ja aitab tagada andmete mõistetavust.
+AJ toimib isikuandmete kasutusandmete ühtlustajana. See on oluline, sest  ühtlustatud andmevorming võimaldab andmete andmesubjektile näitamist automatiseerida ja aitab tagada andmete mõistetavust.
 
 ```json
 {
@@ -193,6 +194,8 @@ Praegu otseselt ei saa. Oskusliku seadistusega võiks isegi praegu saada (andmet
 - andmesubjektile pakutakse logiga tutvumiseks veebipõhist e-teenust.
 - teenus tehakse kättesaadavaks eesti.ee alt, kuid võib olla iseseisva "brändinguga"
 
+"AJ teenusena" oleks suur logiserver (vt järgnev joonis), mis pakuks API-t logiandmete vastuvõtmiseks ja kaht kasutajaliidest logiandmete vaatamiseks (kodanikule ja asutuse sisekontrolli töötajale). 
+
 <img src='img/AJ-teenusena.PNG' style='width:500px;'>
 
 REST API, üle avaliku interneti. Turvatud API võtmega.
@@ -217,4 +220,4 @@ AJ nimi seondub negatiivse tegevuse peegeldusega. Riik jälgib kodanikke. Selle 
 
 AJ andmetest tõusev tulu võiks mitte piirduda negatiivse tegevuse vältimisega teise negatiivse tegevuse abil. AJ positiivne efekt võiks olla kodanikul tekkivas paremas pildis ja arusaamises e-riigi toimimisest.
 
-_Kodaniku andmeait_, _Kodaniku andmekaeve_ vms võiksid ehk AJ kuvandit muuta positiivsemaks. 
+_Kodaniku andmeait_, _Kodaniku andmekaeve_ vms võiksid ehk AJ kuvandit muuta positiivsemaks.
