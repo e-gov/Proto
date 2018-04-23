@@ -130,11 +130,20 @@ Näide. Autentimisteenuses TARA kogutakse järgmisi isikuandmeid:
   - e-post, telefon
 ```
 
-RIHA kogemuse põhjal võib väita, et piirajaks on siin mitte tehniline lahendus, vaid asutuste valmisolek andmekoosseise asjakohasel abstraktsioonitasemel ja arusaadavas keeles kirjeldada. Andmekoosseisu kirjelduskeel peab olema maksimaalselt lihtne. Näiteks on kasutatud YAML-i alamhulka.
+RIHA kogemuse põhjal võib väita, et piirajaks on siin mitte tehniline lahendus, vaid asutuste valmisolek andmekoosseise asjakohasel abstraktsioonitasemel ja arusaadavas keeles kirjeldada. Andmekoosseisu kirjelduskeel peab olema maksimaalselt lihtne. Näites on kasutatud YAML-i alamhulka.
 
 Oleks küll loogiline ja ilus ning looks lisaväärtust, kui andmesubjekt saaks andmetöötlusfaktide nimekirja (ja see nimekiri võib olla tühi) kõrval ka loetelu andmekogus tema kohta hoitavatest andmetest (andmekategooriatest).
 
 ### 2.5 Andmesubjekti kohta säilitatavate andmete kuvamise lisamine
+
+Ühtse vormingu väljatöötamine pole raske. Lihtne, üldistatud vorming, millega saab kirjeldada peaaegu kõike võiks olla järgmine:
+- andmekirjeldus on kirjete kogum
+- kirje koosneb väljadest
+- väli koosneb välja nimest ja välja väärtusest
+- välja nimi on sõne
+- välja väärtus on kas sõne või kirje.
+
+Andmekogude ümbertegemine selliseid andmeid tootma panemiseks oleks aga hinnanguliselt väga kulukas.
 
 ### 2.6 "AJ teenusena"
 
