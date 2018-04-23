@@ -58,13 +58,13 @@ AJ isikuandmete kasutusandmete ühtlustajana. See on oluline. Ühtlustatud andme
 
 AJ-s salvestatav isikuandmete kasutuse fakt (HTTP POST päringu kehana (JSON-vormingus))
 
-### 1.3 AJ kui andmevahetusprotokoll
+### 1.3 Andmevahetusprotokoll
 
 AJ-s on fikseeritud viis isikuandmete kasutusandmete edastamiseks eesti.ee-le.
 
-### 1.4 AJ kui teenus
+### 1.4 Teenus
 
-Esitusteenus eesti.ee-s. Esitusteenust pakub RIA.
+Teenusena käsitame rakendust, mida asutus ei pea ise paigaldama ega hooldama. AJ koosseisus on üks teenus - esitusteenus eesti.ee-s. Esitusteenust pakub RIA.
 
 ### 1.5 Kogemus
 
@@ -80,17 +80,27 @@ Võib päris kindlalt väita, et AJ ja analoogilised lahendused aitavad teha e-r
 
 ## 2 AJ edasiarendusettepanekud
 
-Laiendada andmejälgijaga haaratavate töötlussündmuste hulka
-Praegu: andmete vaatamine (kes on andmeid vaadanud?)
-andmete edastamine teise andmekogusse (X-teega)
+Edasiarenduse all mõistame nii tarkvaraarendust kui ka toetavaid standardimis- ja kommunikatsioonitegevust, samuti lahenduste pakkumist pilveteenustena.
 
-Lisada: andmete salvestamine
-andmete kustutamine
+### 2.1 Laiendada andmejälgijaga haaratavate töötlussündmuste hulka
 
-Isikuandmete töötlusandmete keskne vaatamiskoht
-Lisada kohustus pakkuda isikuandmete töötlusandmeid eesti.ee-s  
+Praegu on fookus kahel töötlusliigil:
+- andmete vaatamine (kes on andmeid vaadanud?)
+- andmete edastamine teise andmekogusse (X-teega)
 
-### 2.1 Esitusteenuse kasutatavuse tõstmine
+Lisada:
+- andmete salvestamine
+- andmete kustutamine
+
+Tehniliselt on see ka praeguses lahenduses võimalik (`action`). Küsimus on metoodiline.
+
+### 2.2 Keskse esitusteenuse aktiivne propageerimine
+
+Isikuandmete töötlusandmete keskne vaatamiskoht on oluline. Praegu on eesti.ee esitusteenuse kasutamine vabatahtlik.
+ 
+Lisada kohustus pakkuda isikuandmete töötlusandmeid eesti.ee-s.
+
+### 2.3 Esitusteenuse kasutatavuse tõstmine
 
 Olukord pole halb, kuid esitusteenus upub riigiportaali arvukate artiklite ja teenuste hulka. Esitusteenus võiks olla paremini ülesleitav. 
 
@@ -98,13 +108,15 @@ _Paralleelina Ervinal, kunagine efektne visuaalne vastus küsimusele "Mida riik 
 
 Palju arutatud küsimus on kas kodanik peaks saama andmed ühe päringuga. (Praegu peab iga andmekogu eraldi avama).
 
-### 2.2 Andmesubjekti kohta kogutavate andmete koosseisu kättesaadavaks tegemine
+### 2.4 Andmesubjekti kohta kogutavate andmete koosseisu kättesaadavaks tegemine
 
 Jutt on metaandmetest, s.t mitte andmeüksus ise, vaid andmeüksuse kategooria. RIHA kogemuse põhjal võib väita, et piirajaks on siin mitte tehniline lahendus, vaid asutuste valmisolek andmekoosseise asjakohasel abstraktsioonitasemel ja arusaadavas keeles kirjeldada.
 
 Oleks küll loogiline ja ilus ning looks lisaväärtust, kui andmesubjekt saaks andmetöötlusfaktide nimekirja (ja see nimekiri võib olla tühi) kõrval ka loetelu andmekogus tema kohta hoitavatest andmetest (andmekategooriatest).
 
-### "AJ teenusena"
+### 2.5 Andmesubjekti kohta säilitatavate andmete kuvamise lisamine
+
+### 2.6 "AJ teenusena"
 
 Paljudele asutustele on takistuseks isikuandmeid töötlevate infosüsteemide suur arv. Kümnetes.
 AJ on projekteeritud paigaldatavana ühe andmekogu külge (selle põhjuseks 2016. a oli tahtmine hoida disain lihtsana ja vältida "superandmebaasi" teket).
