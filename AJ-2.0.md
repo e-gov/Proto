@@ -10,19 +10,19 @@ permalink: AJ-20
 
 ## Kokkuvõte
 
-Andmejälgija (AJ) on isikuandmete kasutuse jälgimise originaalne lahendus. Pilootprojektina AJ õigustas end, kuid edasine rakendamine on seiskunud. Nüüd on huvi asutustes AJ vastu tõusnud, ühtse andmekaitsemääruse nõuete mõjul. 
-
-Vaatleme võimalusi AJ edasiarendamiseks, eelkõige selliseid, mille tulemusel kasutuselevõtu barjäär asutusele oleks madalam ja andmesubjektile tekiks andmetest rohkem väärtust.
+Vaatleme võimalusi andmejälgija (AJ) edasiarendamiseks, eelkõige selliseid,mille tulemusel kasutuselevõtu barjäär asutusele oleks madalam ja andmesubjektile tekiks andmetest rohkem väärtust.
 
 Vaadeldud võimalustest kõige atraktiivsem tundub AJ pakkumine teenusena. Ideedega tuleb siiski edasi töötada.
 
 ## Sissejuhatus
 
-Andmejälgija, lühendatult AJ, on 2015-2016 RIA poolt arendatud isikuandmete kasutuse jälgimise standardlahendus. Käesolev dokument esitab ettepanekud AJ edasiarendamiseks.
+Andmejälgija (AJ), on 2015-2016 RIA poolt arendatud isikuandmete kasutuse jälgimise originaalse lahendus.
 
-Isikuandmete töötlemise jälgimise teema on aktualiseerunud. Ühtne andmekaitsemäärus (GDPR) jõustub 2018. a mais. Asutustel tuleb hakata andma andmesubjektidele teavet isikuandmete töötlemise kohta. 
+Pilootprojektina AJ õigustas end ja võeti kasutusele 4-5 asutuses. Kuid edasine rakendamine on seiskunud.
 
-Eriti oluline on täita õigusega pandud kohustus kokkuhoidlike kuludega, kiiresti ja kodanikule mugavalt kasutataval kujul.
+Nüüd on huvi asutustes AJ vastu tõusnud, ühtse andmekaitsemääruse nõuete mõjul. Ühtse andmekaitsemääruse (GDPR) jõustumisel 2018. a mais tuleb asutustel hakata andma andmesubjektidele teavet isikuandmete töötlemise kohta. 
+
+Oluline on täita need õigusest tulenevad andmekohustused kokkuhoidlike kuludega, kiiresti ja kodanikule mugavalt kasutataval kujul.
 
 Standardlahendused või -komponendid, ühiselt kasutatavad teenused või vähemalt ühtlustatud andmevormingud võimaldaksid GDPR nõuete täitmisel suurt kokkuhoidu.
 
@@ -208,3 +208,11 @@ Lühemaid termineid vajavad mõisted:
 - _andmed isikuandmete kasutamise (või laiemalt - töötlemise) kohta_
 - _isikuandmete kasutusandmete andmebaas_ 
 - _isikuandmete kasutusandmetega tutvumine (andmesubjekti poolt)_.
+
+### 2.9 Kuvandimuutus
+
+AJ nimi seondub negatiivse tegevuse peegeldusega. Riik jälgib kodanikke. Selle neutraliseerimiseks AJ annab kodanikule võimaluse jälgida riiki.
+
+AJ andmetest tõusev tulu võiks mitte piirduda negatiivse tegevuse vältimisega teise negatiivse tegevuse abil. AJ positiivne efekt võiks olla kodanikul tekkivas paremas pildis ja arusaamises e-riigi toimimisest.
+
+_Kodaniku andmeait_, _Kodaniku andmekaeve_ vms võiksid ehk AJ kuvandit muuta positiivsemaks. 
