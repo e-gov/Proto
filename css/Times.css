@@ -4,7 +4,7 @@
 
 /*#region Paigutus */
 body {
-  max-width: 50em;
+  max-width: 55em;
   margin: 0 0; 
   padding: 0.6em 1.5em 2em 2em; 
   font-family: 'Segoe UI', Arial, serif;
@@ -17,7 +17,7 @@ body {
 .pais { font-family: 'Anonymous Pro', sans-serif;
   font-size: 13pt; margin-bottom: 8px; }
 
-#Tekst { width: 40rem; }
+#Tekst { width: 50rem; }
 
 /* ---- Avalehe paigutus ---- */  
 #Container { display: flex; max-width: 60em; }
@@ -29,21 +29,19 @@ body {
 
 /*#region Pealkirjad */
 h1 {
-  font-size: 32px !important;
+  font-size: 24px !important;
   font-family: 'Segoe UI Semibold', Arial, Helvetica, sans-serif;
   margin-top: 1em;
   margin-bottom: 1rem;
 }
 h2 {
-  font-size: 24px !important;
-  font-family: 'Segoe UI Semibold', Arial, Helvetica, sans-serif;
+  font-size: 13pt !important;
   margin-bottom: 0.5rem;
   margin-bottom: 0.5rem;
 }
 h3 {
   font-size: 12pt !important;
-  font-weight: bold;
-  font-style: italic;
+  font-weight: normal;
   margin-bottom: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -60,11 +58,12 @@ p { margin: 0 0 1em 0; }
 /*#endregion */
 
 /*#region Loetelud */
-#Tekst > ul {
+#Tekst ul {
   list-style-type: '-  ';
   margin: 0 0 1em 0;
   padding-left: 1em;
 }  
+
 #Tekst > ol {
   padding-left: 1em;
 }  
@@ -85,16 +84,18 @@ p { margin: 0 0 1em 0; }
 table { width: 100%; margin: 0 4em 2em 0; }
 table { border-collapse: collapse; }    
 table, th, td { border: 1px solid black; }
-th, td { padding: 4px; }
+th, td { padding: 8px; }
 th { font-weight: normal; font-style: italic; text-align: center; }
 /*#endregion */
 
 /*#region Kood; asciiflow joonised */
 pre, code, samp {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 16px;
-  color: darkslategray !important;
-  overflow-y: hidden; overflow-x: scroll;
+  font-family: monospace;
+  font-size: 15px;
+  color: black !important;
+  background-color: #f6f8fa; /* nagu GitHubis */
+  white-space:pre-wrap;
+  overflow-y: hidden; overflow-x: hidden;
   page-break-inside: avoid; hyphens: none;
   text-transform: none;
 }
@@ -153,5 +154,6 @@ a.nupp:hover {
   border: 1px solid Black !important;
   text-decoration: none !important;
 }
+
 
 /*#endregion */
