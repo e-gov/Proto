@@ -14,66 +14,23 @@ Vaatleme võimalusi andmejälgija (AJ) edasiarendamiseks, eelkõige selliseid,mi
 
 Vaadeldud võimalustest kõige atraktiivsem tundub AJ pakkumine teenusena. Ideedega tuleb siiski edasi töötada.
 
-## Sissejuhatus
+## 1 Sissejuhatus
 
-Andmejälgija (AJ), on 2015-2016 RIA poolt arendatud isikuandmete kasutuse jälgimise originaalse lahendus.
+### 1.1 kontekst
 
-Pilootprojektina AJ õigustas end ja võeti kasutusele 4-5 asutuses. Kuid edasine rakendamine on seiskunud.
+Andmejälgija (AJ), on 2015-2016 RIA poolt arendatud isikuandmete kasutuse jälgimise originaalne lahendus.
 
-Nüüd on huvi asutustes AJ vastu tõusnud, ühtse andmekaitsemääruse nõuete mõjul. Ühtse andmekaitsemääruse (GDPR) jõustumisel 2018. a mais tuleb asutustel hakata andma andmesubjektidele teavet isikuandmete töötlemise kohta. 
+Pilootprojektina AJ õigustas end. AJ võeti kasutusele 4-5 asutuses. Kuid edasine rakendamine on seiskunud.
+
+Nüüd on ühtse andmekaitsemääruse (GDPR)  mõjul huvi asutustes AJ vastu tõusnud. Ühtse andmekaitsemääruse jõustumisel 2018. a mais tuleb asutustel hakata andma andmesubjektidele teavet isikuandmete töötlemise kohta. 
 
 Oluline on täita need õigusest tulenevad andmekohustused kokkuhoidlike kuludega, kiiresti ja kodanikule mugavalt kasutataval kujul.
 
-Standardlahendused või -komponendid, ühiselt kasutatavad teenused või vähemalt ühtlustatud andmevormingud võimaldaksid GDPR nõuete täitmisel suurt kokkuhoidu.
+Standardlahendused või -komponendid, ühiselt kasutatavad teenused või vähemalt ühtlustatud andmevormingud võimaldaksid GDPR nõuete täitmisel suurt kokkuhoidu. Samas on andmekogud ja taristud erinevad, mille tõttu universaalse lahenduse leidmine on problemaatiline.
 
 Seetõttu väärib analüüsi, kuidas AJ võiks GDPR nõuete täitmisel asutustele võimalikult kasulik olla.
 
-## 1 Andmejälgija
-
-Andmejälgija ([https://github.com/e-gov/AJ](https://github.com/e-gov/AJ)) on modulaarse arhitektuuriga standardne lahendus. AJ on kasutusel 4-5 asutuses.
-
-### 1.1 Komponendid
-
-AJ komponendid on:
-
-- _Eraldusfilter_ püüab isikuandmete kasutusfakte välja X-tee andmeliiklusest
-- _Andmesalvestaja_ kogub ja säilitab isikuandmete kasutusfakte
-- _Sisekontrollija rakendus_ võimaldab kogutud kasutusfakte kontrollide asutuse sisekontrolli eesmärkidel
-- _Esitusteenus_ võimaldab andmesubjektil eesti.ee-s vaadata isikuandmete kasutusi.  
-AJ on ühtaegu nii:
-
-- andmevorming
-- andmevahetusprotokoll
-- e-teenus
-- kui ka erinevatesse asutustesse paigaldatav tarkvara.
-
-### 1.2 Ühtlustatud andmevorming
-
-AJ isikuandmete kasutusandmete ühtlustajana. See on oluline. Ühtlustatud andmevorming võimaldab andmete andmesubjektile näitamist automatiseerida ja aitab tagada andmete mõistetavust.
-
-```json
-{
-  "personcode": "36107120334",
-  "logtime": "2018-04-23 T12:04:10",
-  "action": "andmepäring",
-  "receiver": "Eesti Haigekassa",
-  "sender": "Rahvastikuregister",
-  "sendercode": "70000562",
-  "receivercode": "74000091"
-}
-```
-
-AJ-s salvestatav isikuandmete kasutuse fakt (HTTP POST päringu kehana (JSON-vormingus))
-
-### 1.3 Andmevahetusprotokoll
-
-AJ-s on fikseeritud viis isikuandmete kasutusandmete edastamiseks eesti.ee-le.
-
-### 1.4 Teenus
-
-Teenusena käsitame rakendust, mida asutus ei pea ise paigaldama ega hooldama. AJ koosseisus on üks teenus - esitusteenus eesti.ee-s. Esitusteenust pakub RIA.
-
-### 1.5 Kogemus
+### 1.2 Kogemus
 
 AJ retseptsiooni ei ole süstemaatiliselt uuritud. Seetõttu on siinsed hinnangud subjektiivsed.
 
@@ -91,11 +48,56 @@ _Kodaniku "suurandmed". Kui AJ pakuks täielikumat pilti, siis võiks kodanikku 
 
 Võib päris kindlalt väita, et AJ ja analoogilised lahendused aitavad teha e-riigi toimimist kodanikule läbipaistvamaks ja arusaadavamaks ning selle kaudu suurendavad usaldust riigi vastu.
 
-## 2 AJ edasiarendusettepanekud
+## 2 Andmejälgija
+
+Andmejälgija ([https://github.com/e-gov/AJ](https://github.com/e-gov/AJ)) on modulaarse arhitektuuriga standardne lahendus. AJ on kasutusel 4-5 asutuses.
+
+### 2.1 Komponendid
+
+AJ komponendid on:
+
+- _Eraldusfilter_ püüab isikuandmete kasutusfakte välja X-tee andmeliiklusest
+- _Andmesalvestaja_ kogub ja säilitab isikuandmete kasutusfakte
+- _Sisekontrollija rakendus_ võimaldab kogutud kasutusfakte kontrollide asutuse sisekontrolli eesmärkidel
+- _Esitusteenus_ võimaldab andmesubjektil eesti.ee-s vaadata isikuandmete kasutusi.  
+AJ on ühtaegu nii:
+
+- andmevorming
+- andmevahetusprotokoll
+- e-teenus
+- kui ka erinevatesse asutustesse paigaldatav tarkvara.
+
+### 2.2 Ühtlustatud andmevorming
+
+AJ isikuandmete kasutusandmete ühtlustajana. See on oluline. Ühtlustatud andmevorming võimaldab andmete andmesubjektile näitamist automatiseerida ja aitab tagada andmete mõistetavust.
+
+```json
+{
+  "personcode": "36107120334",
+  "logtime": "2018-04-23 T12:04:10",
+  "action": "andmepäring",
+  "receiver": "Eesti Haigekassa",
+  "sender": "Rahvastikuregister",
+  "sendercode": "70000562",
+  "receivercode": "74000091"
+}
+```
+
+AJ-s salvestatav isikuandmete kasutuse fakt (HTTP POST päringu kehana (JSON-vormingus))
+
+### 2.3 Andmevahetusprotokoll
+
+AJ-s on fikseeritud viis isikuandmete kasutusandmete edastamiseks eesti.ee-le.
+
+### 2.4 Teenus
+
+Teenusena käsitame rakendust, mida asutus ei pea ise paigaldama ega hooldama. AJ koosseisus on üks teenus - esitusteenus eesti.ee-s. Esitusteenust pakub RIA.
+
+## 3 AJ edasiarendusettepanekud
 
 Edasiarenduse all mõistame nii tarkvaraarendust kui ka toetavaid standardimis- ja kommunikatsioonitegevust, samuti lahenduste pakkumist pilveteenustena.
 
-### 2.1 Laiendada andmejälgijaga haaratavate töötlussündmuste hulka
+### 3.1 Laiendada andmejälgijaga haaratavate töötlussündmuste hulka
 
 Praegu on fookus kahel töötlusliigil:
 - andmete vaatamine (kes on andmeid vaadanud?)
@@ -107,13 +109,13 @@ Lisada:
 
 Tehniliselt on see ka praeguses lahenduses võimalik (`action`). Küsimus on metoodiline.
 
-### 2.2 Keskse esitusteenuse aktiivne propageerimine
+### 3.2 Keskse esitusteenuse aktiivne propageerimine
 
 Isikuandmete töötlusandmete keskne vaatamiskoht on oluline. Praegu on eesti.ee esitusteenuse kasutamine vabatahtlik.
  
 Lisada kohustus pakkuda isikuandmete töötlusandmeid eesti.ee-s.
 
-### 2.3 Esitusteenuse laiendamine
+### 3.3 Esitusteenuse laiendamine
 
 Olukord pole halb, kuid esitusteenus upub riigiportaali arvukate artiklite ja teenuste hulka. Esitusteenus võiks olla paremini ülesleitav. 
 
@@ -123,7 +125,7 @@ Palju arutatud küsimus on kas kodanik peaks saama andmed ühe päringuga. (Prae
 
 Esitusteenus ei paku kodanikule analüütilisi vahendeid. Vähemalt teoreetiliselt võiks Kodanik teha esitlusteenuse andmete põhjal andmeanalüüsi või -kaevet. See eeldab vist siiski suuremat andmehulka.  
 
-### 2.4 Andmesubjekti kohta kogutavate andmete koosseisu kättesaadavaks tegemine
+### 3.4 Andmesubjekti kohta kogutavate andmete koosseisu kättesaadavaks tegemine
 
 _Mis liiki andmeid minu kohta kogutakse?_
 
@@ -153,7 +155,7 @@ RIHA kogemus näitab ka, et andmekoosseisu kirjelduskeel peab olema maksimaalsel
 
 Oleks küll loogiline ja ilus ning looks lisaväärtust, kui andmesubjekt saaks andmetöötlusfaktide nimekirja (ja see nimekiri võib olla tühi) kõrval ka loetelu andmekogus tema kohta hoitavatest andmetest (andmekategooriatest).
 
-### 2.5 Andmesubjekti kohta säilitatavate andmete kuvamise lisamine
+### 3.5 Andmesubjekti kohta säilitatavate andmete kuvamise lisamine
 
 Ühtse vormingu väljatöötamine pole raske. Lihtne, üldistatud vorming, millega saab kirjeldada peaaegu kõike võiks olla järgmine:
 - andmekirjeldus on kirjete kogum
@@ -164,9 +166,9 @@ Oleks küll loogiline ja ilus ning looks lisaväärtust, kui andmesubjekt saaks 
 
 Andmekogude ümbertegemine selliseid andmeid tootma panemiseks oleks aga hinnanguliselt väga kulukas.
 
-### 2.6 "AJ teenusena"
+### 3.6 "AJ teenusena"
 
-#### 2.6.1 Konfigureerimine, paigaldamine ja haldamine kui kasutuselevõtu barjäärid
+#### 3.6.1 Konfigureerimine, paigaldamine ja haldamine kui kasutuselevõtu barjäärid
 
 AJ praegune versioon on arendatud tarkvarana, mida asutus peab oma infosüsteemidega ja oma IT-taristusse sobitama, konfigureerima ja paigaldama. Praegune tarkvara on tehtud paindlikuna, seda saab paigaldada mitmel erineval viisil, suuremas või väiksemas komplektis. See nagu peaks suurendama tarkvara kasutust, kuid samas lisab keerukust. AJ tarkvara ise ei ole keeruline,selles ei ole erilisi algoritme. Tegu on nn plumbing tüüpi lahendusega. Seetõttu on paljudel asutustel kiusatus teostada AJ funktsionaalsus ise.
 
@@ -178,7 +180,7 @@ Praegu otseselt ei saa. Oskusliku seadistusega võiks isegi praegu saada (andmet
 
 *Aja vaimule vastab tarkvara pakkumine teenusena.*
 
-#### 2.6.2 "AJ teenusena"
+#### 3.6.2 "AJ teenusena"
 
  tähendaks, et 
 - asutusele pakutakse lihtsat REST API-t, millega asutus saab isikuandmete töötlust logida.
@@ -195,11 +197,11 @@ Praegu otseselt ei saa. Oskusliku seadistusega võiks isegi praegu saada (andmet
 
 REST API, üle avaliku interneti. Turvatud API võtmega.
 
-### 2.7 AJ protokolli selgem väljatoomine
+### 3.7 AJ protokolli selgem väljatoomine
 
 AJ kui protokoll on hea - kuid protokoll pole piisavalt selgelt välja toodud. Üks võimalus on AJ protokoll selgemalt välja tuua. Eesti tingimustes peame siiski arvestama, et protokoll üksi ei pane asju liikuma.
 
-### 2.8 Terminoloogia arendamine
+### 3.8 Terminoloogia arendamine
 
 AJ on hea - meeldejääv, tähendust kandev ja suupärane nimetus. Kuid isikuandmete töötluse kodanikule läbipaistvaks tegemisega seotud terminid on pikad ja lohisevad. Paljusid ei asju ei saagi suupäraselt öelda. AJ leviks kergemini, kui AJ dokumentatsiooni saaks kompaktsemalt ja kodanikulähedasemas keeles esitada.  
 
@@ -209,7 +211,7 @@ Lühemaid termineid vajavad mõisted:
 - _isikuandmete kasutusandmete andmebaas_ 
 - _isikuandmete kasutusandmetega tutvumine (andmesubjekti poolt)_.
 
-### 2.9 Kuvandimuutus
+### 3.9 Kuvandimuutus
 
 AJ nimi seondub negatiivse tegevuse peegeldusega. Riik jälgib kodanikke. Selle neutraliseerimiseks AJ annab kodanikule võimaluse jälgida riiki.
 
