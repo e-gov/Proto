@@ -137,6 +137,8 @@ Oskusliku seadistusega võiks see isegi praegu olla võimalik (andmete hoidmine 
 - andmesubjektile pakutakse logiga tutvumiseks veebipõhist e-teenust.
 - teenus tehakse kättesaadavaks eesti.ee alt, kuid võib olla iseseisva "brändinguga"
 
+<img src='img/AJ-teenusena.PNG' style='width:500px;'>
+
 AJ praegune versioon on arendatud tarkvarana, mida asutus peab oma infosüsteemidega ja oma IT-taristusse sobitama. Tarkvara on paindlik, seda saab paigaldada mitmel erineval viisil. See nagu peaks suurendama tarkvara kasutust, kuid samas lisab keerukust. Tarkvara ise ei ole keeruline. Tegu on nn plumbing tüüpi lahendusega, selles ei ole erilisi algoritme.
 Seetõttu on paljudel asutustel kiusatus teostada AJ funktsionaalsus ise.
 
