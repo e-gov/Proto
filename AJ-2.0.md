@@ -3,12 +3,16 @@ permalink: AJ-20
 ---
 
 # Andmejälgija 2.0
+{: .no_toc}
+
+- TOC
+{:toc}
 
 ## Sissejuhatus
 
 Andmejälgija, lühendatult AJ, on 2015-2016 RIA poolt arendatud isikuandmete kasutuse jälgimise lahendus. Käesolev dokument esitab ettepanekud AJ edasiarendamiseks.
 
-Isikuandmete töötlemise jälgimise teema on aktualiseerunud ühtne andmekaitsemääruse (GDPR) jõustumisega 2018. a mais. Asutustel tuleb hakata andma andmesubjektidele teavet isikuandmete töötlemise kohta. 
+Isikuandmete töötlemise jälgimise teema on aktualiseerunud. Ühtne andmekaitsemäärus (GDPR) jõustub 2018. a mais. Asutustel tuleb hakata andma andmesubjektidele teavet isikuandmete töötlemise kohta. 
 
 Eriti oluline on täita õigusega pandud kohustus kokkuhoidlike kuludega, kiiresti ja kodanikule mugavalt kasutataval kujul.
 
@@ -16,9 +20,11 @@ Standardlahendused või -komponendid, ühiselt kasutatavad teenused või vähema
 
 Seetõttu väärib analüüsi, kuidas AJ võiks GDPR nõuete täitmisel asutustele võimalikult kasulik olla.
 
-## Andmejälgija
+## 1 Andmejälgija
 
 Andmejälgija ([https://github.com/e-gov/AJ](https://github.com/e-gov/AJ)) on modulaarse arhitektuuriga standardne lahendus, mis praegu on kasutusel 4-5 asutuses.
+
+### 1.1 Komponendid
 
 AJ komponendid on:
 
@@ -34,7 +40,7 @@ AJ on ühtaegu nii:
 - e-teenus
 - kui ka erinevatesse asutustesse paigaldatav tarkvara.
 
-### AJ kui ühtlustatud andmevorming
+### 1.2 Ühtlustatud andmevorming
 
 AJ isikuandmete kasutusandmete ühtlustajana. See on oluline. Ühtlustatud andmevorming võimaldab andmete andmesubjektile näitamist automatiseerida ja aitab tagada andmete mõistetavust.
 
@@ -52,16 +58,27 @@ AJ isikuandmete kasutusandmete ühtlustajana. See on oluline. Ühtlustatud andme
 
 AJ-s salvestatav isikuandmete kasutuse fakt (HTTP POST päringu kehana (JSON-vormingus))
 
-
-### AJ kui andmevahetusprotokoll
+### 1.3 AJ kui andmevahetusprotokoll
 
 AJ-s on fikseeritud viis isikuandmete kasutusandmete edastamiseks eesti.ee-le.
 
-### AJ kui teenus
+### 1.4 AJ kui teenus
 
-Esitusteenus eesti.ee-s
+Esitusteenus eesti.ee-s. Esitusteenust pakub RIA.
 
-## AJ edasiarendusettepanekud
+### 1.5 Kogemus
+
+AJ retseptsiooni ei ole süstemaatiliselt uuritud. Seetõttu tuleb arvestada siinsete hinnangute subjektiivsusega.
+
+eesti.ee kasutusstatistika näitab AJ suhteliselt suurt kasutajaskonda (kuni 10 000 unikaalset kasutajat kuus). Need andmed vajaksid siiski kontrollimist.
+
+Riigi Infosüsteemi Ametini ei ole jõudnud suuri kaebusi ega probleeme ei andmesubjektidelt ega AJ-t käitavatelt asutustelt. See tõendab AJ kontseptsiooni elujõulisust. 
+
+Siiski ei ole selge, kui palju andmesubjektid AJ andmetest kasu saavad (ja kuidas nad seda kasu tajuvad). AJ abil ei ole teadaolevalt avastatud suuri, meediasse jõudnud isikuandmete töötlusnõuete rikkumisi. Kuid võib-olla, et rikkumisi polegi olnud.
+
+Võib päris kindlalt väita, et AJ ja analoogilised lahendused aitavad teha e-riigi toimimist kodanikule läbipaistvamaks ja arusaadavamaks ning selle kaudu suurendavad usaldust riigi vastu.
+
+## 2 AJ edasiarendusettepanekud
 
 Laiendada andmejälgijaga haaratavate töötlussündmuste hulka
 Praegu: andmete vaatamine (kes on andmeid vaadanud?)
@@ -73,7 +90,21 @@ andmete kustutamine
 Isikuandmete töötlusandmete keskne vaatamiskoht
 Lisada kohustus pakkuda isikuandmete töötlusandmeid eesti.ee-s  
 
-## Andmesalvestaja pakkumine teenusena
+### 2.1 Esitusteenuse kasutatavuse tõstmine
+
+Olukord pole halb, kuid esitusteenus upub riigiportaali arvukate artiklite ja teenuste hulka. Esitusteenus võiks olla paremini ülesleitav. 
+
+_Paralleelina Ervinal, kunagine efektne visuaalne vastus küsimusele "Mida riik minu kohta teab?"_
+
+Palju arutatud küsimus on kas kodanik peaks saama andmed ühe päringuga. (Praegu peab iga andmekogu eraldi avama).
+
+### 2.2 Andmesubjekti kohta kogutavate andmete koosseisu kättesaadavaks tegemine
+
+Jutt on metaandmetest, s.t mitte andmeüksus ise, vaid andmeüksuse kategooria. RIHA kogemuse põhjal võib väita, et piirajaks on siin mitte tehniline lahendus, vaid asutuste valmisolek andmekoosseise asjakohasel abstraktsioonitasemel ja arusaadavas keeles kirjeldada.
+
+Oleks küll loogiline ja ilus ning looks lisaväärtust, kui andmesubjekt saaks andmetöötlusfaktide nimekirja (ja see nimekiri võib olla tühi) kõrval ka loetelu andmekogus tema kohta hoitavatest andmetest (andmekategooriatest).
+
+### "AJ teenusena"
 
 Paljudele asutustele on takistuseks isikuandmeid töötlevate infosüsteemide suur arv. Kümnetes.
 AJ on projekteeritud paigaldatavana ühe andmekogu külge (selle põhjuseks 2016. a oli tahtmine hoida disain lihtsana ja vältida "superandmebaasi" teket).
@@ -81,7 +112,7 @@ Asutus peab paigaldama Postgre andmebaasi, turvama ja haldama seda. 40 infosüst
 
 Oskusliku seadistusega võiks see isegi praegu olla võimalik (andmete hoidmine ühes PostgreSQL instantsis, eraldi schema-des). Kuid ei tohi alahinnata barjääri, mida keerukama konfigureerimise vajadus AJ kasutuselevõtmisele püstitab. (2016. a viidi läbi AJ paigaldamine viies pilootasutuses. Need olid tavalisemast kõrgema IT-võimekusega asutused. Kuid ka neis võttis AJ seadistamine ja paigaldamine kuid).
 
-### "AJ teenusena"
+"AJ teenusena"
 
  tähendaks, et 
 - asutusele pakutakse lihtsat REST API-t, millega asutus saab isikuandmete töötlust logida.
@@ -94,13 +125,10 @@ Oskusliku seadistusega võiks see isegi praegu olla võimalik (andmete hoidmine 
 - andmesubjektile pakutakse logiga tutvumiseks veebipõhist e-teenust.
 - teenus tehakse kättesaadavaks eesti.ee alt, kuid võib olla iseseisva "brändinguga"
 
-
 AJ praegune versioon on arendatud tarkvarana, mida asutus peab oma infosüsteemidega ja oma IT-taristusse sobitama. Tarkvara on paindlik, seda saab paigaldada mitmel erineval viisil. See nagu peaks suurendama tarkvara kasutust, kuid samas lisab keerukust. Tarkvara ise ei ole keeruline. Tegu on nn plumbing tüüpi lahendusega, selles ei ole erilisi algoritme.
 Seetõttu on paljudel asutustel kiusatus teostada AJ funktsionaalsus ise.
 
 AJ kui protokoll on hea - kuid protokoll pole piisavalt selgelt välja toodud. Üks võimalus on AJ protokoll selgemalt välja tuua. Eesti tingimustes peame siiski arvestama, et protokoll üksi ei pane asju liikuma.
-
-
 
 REST API, üle avaliku interneti. Turvatud API võtmega.
 
