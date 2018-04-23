@@ -44,7 +44,7 @@ AJ on ühtaegu nii:
 
 AJ isikuandmete kasutusandmete ühtlustajana. See on oluline. Ühtlustatud andmevorming võimaldab andmete andmesubjektile näitamist automatiseerida ja aitab tagada andmete mõistetavust.
 
-```
+```json
 {
   "personcode": "36107120334",
   "logtime": "2018-04-23 T12:04:10",
@@ -110,7 +110,27 @@ Palju arutatud küsimus on kas kodanik peaks saama andmed ühe päringuga. (Prae
 
 ### 2.4 Andmesubjekti kohta kogutavate andmete koosseisu kättesaadavaks tegemine
 
-Jutt on metaandmetest, s.t mitte andmeüksus ise, vaid andmeüksuse kategooria. RIHA kogemuse põhjal võib väita, et piirajaks on siin mitte tehniline lahendus, vaid asutuste valmisolek andmekoosseise asjakohasel abstraktsioonitasemel ja arusaadavas keeles kirjeldada.
+Jutt on metaandmetest, s.t mitte andmeüksus ise, vaid andmeüksuse kategooria.
+
+Näide. Autentimisteenuses TARA kogutakse järgmisi isikuandmeid:
+
+```yaml
+- autenditav isik (kasutaja)
+  - isikukood, välismaalase puhul muu isiku identifikaator
+  - ees- ja perekonnanimi
+  - riik
+  - muud kasutaja isikuandmed, eIDASE terminoloogias 'atribuudid' vastavalt eIDAS määruse alusel väljatöötatud eIDAS tehnilisele spetsifikatsioonile (välismaalase puhul)
+  - autentimistoimingu andmed
+    - kuupäev ja kellaaeg
+    - klientrakendus, kust kasutaja autentimisele suunati
+    - autentimismeetod
+    - autentimise tulemus (autenditud või mitte)
+- klientrakenduse kontaktisik
+  - ees- ja perekonnanimi
+  - e-post, telefon
+```
+
+RIHA kogemuse põhjal võib väita, et piirajaks on siin mitte tehniline lahendus, vaid asutuste valmisolek andmekoosseise asjakohasel abstraktsioonitasemel ja arusaadavas keeles kirjeldada. Andmekoosseisu kirjelduskeel peab olema maksimaalselt lihtne. Näiteks on kasutatud YAML-i alamhulka.
 
 Oleks küll loogiline ja ilus ning looks lisaväärtust, kui andmesubjekt saaks andmetöötlusfaktide nimekirja (ja see nimekiri võib olla tühi) kõrval ka loetelu andmekogus tema kohta hoitavatest andmetest (andmekategooriatest).
 
@@ -128,7 +148,9 @@ Asutus peab paigaldama Postgre andmebaasi, turvama ja haldama seda. 40 infosüst
 
 Oskusliku seadistusega võiks see isegi praegu olla võimalik (andmete hoidmine ühes PostgreSQL instantsis, eraldi schema-des). Kuid ei tohi alahinnata barjääri, mida keerukama konfigureerimise vajadus AJ kasutuselevõtmisele püstitab. (2016. a viidi läbi AJ paigaldamine viies pilootasutuses. Need olid tavalisemast kõrgema IT-võimekusega asutused. Kuid ka neis võttis AJ seadistamine ja paigaldamine kuid).
 
-*Paigaldamist nõudva tarkvara arendamine ei ole perspektiivne.*
+*Paigaldamist nõudva tarkvara arendamine ei ole perspektiivne. Kuigi "põhimõtteliselt" lihtne, on tänapäeva keerukates taristutes tarkvara endale paigaldamine seotud raskesti kokkuarvutatavate, kuid märgatavate kuludega.*
+
+*Aja vaimule vastab tarkvara pakkumine teenusena.*
 
 #### 2.6.2 "AJ teenusena"
 
@@ -154,3 +176,9 @@ AJ kui protokoll on hea - kuid protokoll pole piisavalt selgelt välja toodud. �
 ### 2.8 Terminoloogia arendamine
 
 AJ on hea - meeldejääv, tähendust kandev ja suupärane nimetus. Kuid isikuandmete töötluse kodanikule läbipaistvaks tegemisega seotud terminid on pikad ja lohisevad. Paljusid ei asju ei saagi suupäraselt öelda. AJ leviks kergemini, kui AJ dokumentatsiooni saaks kompaktsemalt ja kodanikulähedasemas keeles esitada.  
+
+Lühemaid termineid vajavad mõisted:
+
+- _andmed isikuandmete kasutamise (või laiemalt - töötlemise) kohta_
+- _isikuandmete kasutusandmete andmebaas_ 
+- _isikuandmete kasutusandmetega tutvumine (andmesubjekti poolt)_.
