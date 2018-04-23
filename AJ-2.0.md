@@ -128,7 +128,7 @@ Asutus peab paigaldama Postgre andmebaasi, turvama ja haldama seda. 40 infosüst
 
 Oskusliku seadistusega võiks see isegi praegu olla võimalik (andmete hoidmine ühes PostgreSQL instantsis, eraldi schema-des). Kuid ei tohi alahinnata barjääri, mida keerukama konfigureerimise vajadus AJ kasutuselevõtmisele püstitab. (2016. a viidi läbi AJ paigaldamine viies pilootasutuses. Need olid tavalisemast kõrgema IT-võimekusega asutused. Kuid ka neis võttis AJ seadistamine ja paigaldamine kuid).
 
-***Paigaldamist nõudva tarkvara arendamine ei ole perspektiivne.***
+*Paigaldamist nõudva tarkvara arendamine ei ole perspektiivne.*
 
 #### 2.6.2 "AJ teenusena"
 
@@ -151,3 +151,6 @@ REST API, üle avaliku interneti. Turvatud API võtmega.
 
 AJ kui protokoll on hea - kuid protokoll pole piisavalt selgelt välja toodud. Üks võimalus on AJ protokoll selgemalt välja tuua. Eesti tingimustes peame siiski arvestama, et protokoll üksi ei pane asju liikuma.
 
+### 2.8 Terminoloogia arendamine
+
+AJ on hea - meeldejääv, tähendust kandev ja suupärane nimetus. Kuid isikuandmete töötluse kodanikule läbipaistvaks tegemisega seotud terminid on pikad ja lohisevad. Paljusid ei asju ei saagi suupäraselt öelda. AJ leviks kergemini, kui AJ dokumentatsiooni saaks kompaktsemalt ja kodanikulähedasemas keeles esitada.  
