@@ -31,7 +31,7 @@ body {
 h1 {
   font-size: 24px !important;
   font-family: 'Segoe UI Semibold', Arial, Helvetica, sans-serif;
-  margin-top: 1em;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 h2 {
@@ -65,7 +65,7 @@ p { margin: 0 0 1em 0; }
 /*#region Loetelud */
 #Tekst ul {
   list-style-type: '-  ';
-  margin: 0 0 1em 0;
+  margin: 0 0 0 0;
   padding-left: 1em;
 }  
 
