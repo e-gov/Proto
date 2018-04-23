@@ -8,9 +8,17 @@ permalink: AJ-20
 - TOC
 {:toc}
 
+## Kokkuvõte
+
+Andmejälgija (AJ) on isikuandmete kasutuse jälgimise originaalne lahendus. Pilootprojektina AJ õigustas end, kuid edasine rakendamine on seiskunud. Nüüd on huvi asutustes AJ vastu tõusnud, ühtse andmekaitsemääruse nõuete mõjul. 
+
+Vaatleme võimalusi AJ edasiarendamiseks, eelkõige selliseid, mille tulemusel kasutuselevõtu barjäär asutusele oleks madalam ja andmesubjektile tekiks andmetest rohkem väärtust.
+
+Vaadeldud võimalustest kõige atraktiivsem tundub AJ pakkumine teenusena. Ideedega tuleb siiski edasi töötada.
+
 ## Sissejuhatus
 
-Andmejälgija, lühendatult AJ, on 2015-2016 RIA poolt arendatud isikuandmete kasutuse jälgimise lahendus. Käesolev dokument esitab ettepanekud AJ edasiarendamiseks.
+Andmejälgija, lühendatult AJ, on 2015-2016 RIA poolt arendatud isikuandmete kasutuse jälgimise standardlahendus. Käesolev dokument esitab ettepanekud AJ edasiarendamiseks.
 
 Isikuandmete töötlemise jälgimise teema on aktualiseerunud. Ühtne andmekaitsemäärus (GDPR) jõustub 2018. a mais. Asutustel tuleb hakata andma andmesubjektidele teavet isikuandmete töötlemise kohta. 
 
@@ -22,7 +30,7 @@ Seetõttu väärib analüüsi, kuidas AJ võiks GDPR nõuete täitmisel asutuste
 
 ## 1 Andmejälgija
 
-Andmejälgija ([https://github.com/e-gov/AJ](https://github.com/e-gov/AJ)) on modulaarse arhitektuuriga standardne lahendus, mis praegu on kasutusel 4-5 asutuses.
+Andmejälgija ([https://github.com/e-gov/AJ](https://github.com/e-gov/AJ)) on modulaarse arhitektuuriga standardne lahendus. AJ on kasutusel 4-5 asutuses.
 
 ### 1.1 Komponendid
 
@@ -32,7 +40,6 @@ AJ komponendid on:
 - _Andmesalvestaja_ kogub ja säilitab isikuandmete kasutusfakte
 - _Sisekontrollija rakendus_ võimaldab kogutud kasutusfakte kontrollide asutuse sisekontrolli eesmärkidel
 - _Esitusteenus_ võimaldab andmesubjektil eesti.ee-s vaadata isikuandmete kasutusi.  
-
 AJ on ühtaegu nii:
 
 - andmevorming
@@ -68,13 +75,19 @@ Teenusena käsitame rakendust, mida asutus ei pea ise paigaldama ega hooldama. A
 
 ### 1.5 Kogemus
 
-AJ retseptsiooni ei ole süstemaatiliselt uuritud. Seetõttu tuleb arvestada siinsete hinnangute subjektiivsusega.
+AJ retseptsiooni ei ole süstemaatiliselt uuritud. Seetõttu on siinsed hinnangud subjektiivsed.
 
 eesti.ee kasutusstatistika näitab AJ suhteliselt suurt kasutajaskonda (kuni 10 000 unikaalset kasutajat kuus). Need andmed vajaksid siiski kontrollimist.
 
 Riigi Infosüsteemi Ametini ei ole jõudnud suuri kaebusi ega probleeme ei andmesubjektidelt ega AJ-t käitavatelt asutustelt. See tõendab AJ kontseptsiooni elujõulisust. 
 
-Siiski ei ole selge, kui palju andmesubjektid AJ andmetest kasu saavad (ja kuidas nad seda kasu tajuvad). AJ abil ei ole teadaolevalt avastatud suuri, meediasse jõudnud isikuandmete töötlusnõuete rikkumisi. Kuid võib-olla, et rikkumisi polegi olnud.
+AJ abil ei ole teadaolevalt avastatud suuri, meediasse jõudnud isikuandmete töötlusnõuete rikkumisi. Kuid võib-olla, et rikkumisi polegi olnud.
+
+Ei ole selge, kui suurena andmesubjektid AJ kasu tajuvad.
+
+Me ei tea ka mida nad AJ andmetest vaatavad ja milliseid järeldusi teevad. Kas nad käivad andmetest silmadega üle, otsides kahtlast või vaatavad midagi muud?
+
+_Kodaniku "suurandmed". Kui AJ pakuks täielikumat pilti, siis võiks kodanikku huvitada nende andmete analüüs. eesti.ee ei paku praegu AJ andmete analüüsivõimalusi._ 
 
 Võib päris kindlalt väita, et AJ ja analoogilised lahendused aitavad teha e-riigi toimimist kodanikule läbipaistvamaks ja arusaadavamaks ning selle kaudu suurendavad usaldust riigi vastu.
 
@@ -100,7 +113,7 @@ Isikuandmete töötlusandmete keskne vaatamiskoht on oluline. Praegu on eesti.ee
  
 Lisada kohustus pakkuda isikuandmete töötlusandmeid eesti.ee-s.
 
-### 2.3 Esitusteenuse kasutatavuse tõstmine
+### 2.3 Esitusteenuse laiendamine
 
 Olukord pole halb, kuid esitusteenus upub riigiportaali arvukate artiklite ja teenuste hulka. Esitusteenus võiks olla paremini ülesleitav. 
 
@@ -108,7 +121,11 @@ _Paralleelina Ervinal, kunagine efektne visuaalne vastus küsimusele "Mida riik 
 
 Palju arutatud küsimus on kas kodanik peaks saama andmed ühe päringuga. (Praegu peab iga andmekogu eraldi avama).
 
+Esitusteenus ei paku kodanikule analüütilisi vahendeid. Vähemalt teoreetiliselt võiks Kodanik teha esitlusteenuse andmete põhjal andmeanalüüsi või -kaevet. See eeldab vist siiski suuremat andmehulka.  
+
 ### 2.4 Andmesubjekti kohta kogutavate andmete koosseisu kättesaadavaks tegemine
+
+_Mis liiki andmeid minu kohta kogutakse?_
 
 Jutt on metaandmetest, s.t mitte andmeüksus ise, vaid andmeüksuse kategooria.
 
@@ -130,7 +147,9 @@ Näide. Autentimisteenuses TARA kogutakse järgmisi isikuandmeid:
   - e-post, telefon
 ```
 
-RIHA kogemuse põhjal võib väita, et piirajaks on siin mitte tehniline lahendus, vaid asutuste valmisolek andmekoosseise asjakohasel abstraktsioonitasemel ja arusaadavas keeles kirjeldada. Andmekoosseisu kirjelduskeel peab olema maksimaalselt lihtne. Näites on kasutatud YAML-i alamhulka.
+RIHA kogemuse põhjal võib väita, et piirajaks on siin mitte tehniline lahendus, vaid asutuste valmisolek andmekoosseise asjakohasel abstraktsioonitasemel,  arusaadavas keeles ja piisava süsteemsusega kirjeldada.
+
+RIHA kogemus näitab ka, et andmekoosseisu kirjelduskeel peab olema maksimaalselt lihtne. Näites on kasutatud YAML-i alamhulka.
 
 Oleks küll loogiline ja ilus ning looks lisaväärtust, kui andmesubjekt saaks andmetöötlusfaktide nimekirja (ja see nimekiri võib olla tühi) kõrval ka loetelu andmekogus tema kohta hoitavatest andmetest (andmekategooriatest).
 
