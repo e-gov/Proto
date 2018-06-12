@@ -2,8 +2,12 @@
 permalink: AJ-soovitused
 ---
 
+<img src='img/VAPP.PNG' style='width: 400px; margin: 1rem;'>
+
 # Soovitusi andmejälgija rakendamiseks
 {: .no_toc}
+
+_teabekiri AJ rakendajatele_
 
 12.06.2018
 
@@ -25,7 +29,7 @@ Seejuures tuleb märkida, et seletuse andmise täielik automatiseerimine ei ole 
 
 ## 1 Selgitusvajadus 
 
-Andmesubjektil võib olla mitte üksainus, vaid kimp üksteisega seotud küsimusi.
+Andmesubjektil võib AJ logiga tutvumise järel tekkida mitte üksainus, vaid kimp üksteisega seotud küsimusi:
 
 - Miks minu andmeid töödeldi?
 - Mille alusel? 
@@ -39,14 +43,15 @@ Andmesubjektil võib olla mitte üksainus, vaid kimp üksteisega seotud küsimus
 - Kas keegi teine võis veel andmetel ligi saada?
 - jne
 
-AJ kasutamispraktika on veel nii väike, et empiiriline andmestu kodanike seletussoovide kohta puudub. Siiski võib eeldada, et küsimusi tekib.
+AJ kasutamispraktika on veel nii väike, et empiiriline andmestu kodanike seletussoovide kohta puudub. Siiski võib eeldada, et ülalloetletud küsimusi tekib.
 
-Ammendav seletus - osaline seletus - osalise seletus koos viitega lisateabele - viide lisateabele - 
-Kodanik võib tahta teada konkreetse andmebiti edastamise asjaolusid. Terviklike, kodanikele mugavate e-teenuste osutamiseks, aga samuti avaliku halduse mitmesuguste teiste ülesannete täitmiseks on sageli vaja kombineerida andmeid erinevatest andmekogudest. Teenuse osutamiseks ja isegi selle taustal võidakse teha mitmeid päringuid. Atomaarse andmepäringu mõistmine on tihti võimalik ainult teenuseosutamise või avaliku ülesande täitmise laiemat konteksti omades. Teiste sõnadega, kodanikul on tema kohta käiva andmetöötluse mõistmiseks vaja "suuremat pilti".
+### "Suurema pildi" vajadus
 
-Kuidas seda "suuremat pilti" kodanikule anda? Asutus saab kasutada mitmeid võimalusi.
+Kodanik võib tahta teada konkreetse andmebiti edastamise asjaolusid. Kuid terviklike, kodanikele mugavate e-teenuste osutamiseks, aga samuti avaliku halduse mitmesuguste teiste ülesannete täitmiseks on sageli vaja kombineerida andmeid erinevatest andmekogudest. Teenuse osutamiseks ja isegi selle taustal võidakse teha mitmeid päringuid. Atomaarse andmepäringu mõistmine on tihti võimalik ainult teenuseosutamise või avaliku ülesande täitmise laiemat konteksti omades. Teiste sõnadega, kodanikul on tema kohta käiva andmetöötluse mõistmiseks vaja "suuremat pilti".
 
 ## 2 Selgitusvajaduse rahuldamine
+
+Kuidas kodaniku selgitusvajadust rahuldada? Asutusel on kasutada mitmeid võimalusi.
 
 ### 2.1 Menetluse/toimingu nimetus (väli `action`)
 
@@ -82,7 +87,7 @@ X-tee standardsetest päistest pakub suurimat huvi `issue`. Päis `issue` on mõ
 
 Sõnumi keha on SOAP standardile vastava XML-andmestruktuur. XPath töötlusreegliga saab sealt vajaliku teavet eraldada ja logikirjesse (välja ´action` kanda). Sõnumi keha võib seletuse koostamisel olla väga oluline teabeallikas. Abiks on X-tee levinud praktika peegeldada päringsõnumi sisu vastussõnumis. 
 
-X-teel andmeid vahetavad asutused võivad kasutada täiendavaid päiseelemente.
+X-teel andmeid vahetavad asutused võivad kasutada täiendavaid, oma valitud päiseelemente.
 
 ### 2.4 Käsitsi sisestatav
 
@@ -148,7 +153,7 @@ Kirjelduselement `requestreason`:
 
 Andmejälgija, [https://github.com/e-gov/AJ](https://github.com/e-gov/AJ), (AJ), on standardne protokoll ja tarkvara, mille paigaldamisega saab asutus kodanikule pakkuda ülevaadet (logi) kodaniku isikuandmete kasutamisest.
 
-<img src='img/AJ.PNG' style='width:600px;'>
+<img src='img/AJ.PNG' style='width:750px;'>
 
 ## LISA 2. AJ logikirje
 
