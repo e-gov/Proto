@@ -9,7 +9,7 @@ _arenduskava_
 
 12.06.2018
 
-<img src='img/AJ-ESITUS.PNG' style='width:750px;'>
+<img src='img/AJ-ESITUS.PNG' style='width:700px;'>
 
 Andmejälgija, [https://github.com/e-gov/AJ](https://github.com/e-gov/AJ), (AJ), on standardne protokoll ja tarkvara, mille paigaldamisega saab asutus kodanikule pakkuda ülevaadet (logi) kodaniku isikuandmete kasutamisest.
 
