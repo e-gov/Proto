@@ -2,7 +2,9 @@
 permalink: AJ-soovitused
 ---
 
-<img src='img/VAPP.PNG' style='width: 400px; margin: 1rem;'>
+KAVAND
+
+<img src='img/VAPP.PNG' style='width: 300px; margin: 0 0 1rem 0;'>
 
 # Soovitusi andmejälgija rakendamiseks
 {: .no_toc}
@@ -16,22 +18,23 @@ _teabekiri AJ rakendajatele_
 
 ## Sissejuhatus
 
-Andmejälgija (AJ) rakendamisel tõusetub küsimusi, mis vajavad vastust. Samuti koguneb asutustel kogemusi, mis väärivad levitamist. Käesolevas teabekirjas anname soovitusi AJ-ga pakutava teabe informatiivsemaks tegemiseks.
+Andmejälgija (AJ) rakendamisel tõusetub küsimusi, mis vajavad vastust. Samuti koguneb asutustel kogemusi, mis väärivad levitamist. Käesolevas teabekirjas anname soovitusi AJ-ga pakutava teabe andmesubjektile informatiivsemaks tegemiseks.
 
 Kuidas hõlpsamini vastata kodanikele, kes AJ-s isikuandmete töötluse logiga tutvumise järel soovivad täpsemaid selgitusi?
 {:.adv }
 
-AJ on automatiseeritud lahendus - selles mõttes, et isikuandmete töötluse faktid (logikirjed) salvestatakse X-tee andmeliiklusest eraldusfiltri töötlusreeglite automatiseeritud rakendamisega ja logikirjed esitatakse andmesubjektile eesti.ee-s iseteeninduse põhimõttel.
+AJ on automatiseeritud lahendus. Isikuandmete töötluse faktid (logikirjed) salvestatakse X-tee andmeliiklusest eraldusfiltri töötlusreeglite automatiseeritud rakendamisega. Logikirjed esitatakse andmesubjektile eesti.ee-s iseteeninduse põhimõttel.
 
-Logikirjed peavad olema kodanikule arusaadavad, äraseletavad ja vastama kodaniku küsimustele. Kuidas seda - seletamist - automatiseerida?
+Logikirjed peavad olema kodanikule arusaadavad, äraseletavad ja vastama kodaniku küsimustele. Kuidas  seletamist automatiseerida?
 
-Seejuures tuleb märkida, et seletuse andmise täielik automatiseerimine ei ole võimalik. 
+Seletuse andmise täielik automatiseerimine üldjuhul ei ole võimalik. Kuid siiski on mitmeid võimalusi teha teave kodanikule paremini mõistetavaks. 
 
 ## 1 Selgitusvajadus 
 
-Andmesubjektil võib AJ logiga tutvumise järel tekkida mitte üksainus, vaid kimp üksteisega seotud küsimusi:
+Andmesubjektil võib AJ logiga tutvumise järel tekkida terve kimp üksteisega seotud küsimusi:
 
 - Miks minu andmeid töödeldi?
+- Mis eesmärgiga minu andmeid töödeldi?
 - Mille alusel? 
 - Miks toiming, mille raames andmeid töödeldi oli vajalik?
 - Miks just need andmed?
@@ -41,9 +44,9 @@ Andmesubjektil võib AJ logiga tutvumise järel tekkida mitte üksainus, vaid ki
 - Mis andmetest edasi sai?
 - Kas andmed edastati turvalisel viisil?
 - Kas keegi teine võis veel andmetel ligi saada?
-- jne
+- jne.
 
-AJ kasutamispraktika on veel nii väike, et empiiriline andmestu kodanike seletussoovide kohta puudub. Siiski võib eeldada, et ülalloetletud küsimusi tekib.
+Märgime, et AJ kasutamispraktika ei ole veel suur. Empiiriline andmestu kodanike seletussoovide kohta puudub. Siiski võib eeldada, et vähemalt osa ülalloetletud küsimusi praktikas tekib. Asutusi huvitab, et sagedased küsimused saaksid vastuse AJ-s ega nõuaks kodaniku täiendavaid pöördumisi asutuse poole ning nendele pöördumistele (inimtööga) vastamist.
 
 ### "Suurema pildi" vajadus
 
@@ -55,12 +58,7 @@ Kuidas kodaniku selgitusvajadust rahuldada? Asutusel on kasutada mitmeid võimal
 
 ### 2.1 Menetluse/toimingu nimetus (väli `action`)
 
-AJ logikirjes esitatakse menetluse või toimingu nimetus väljas `action`.
-
-Pöörata välja `action` informatiivsusele erilist tähelepanu. 
-{:.note }
-
-Välja `action` saab täita staatiliselt, dünaamiliselt või käsitsi.
+Standardne element AJ logikirjes menetluse või toimingu nimetamiseks on väli `action`. Välja `action` saab täita staatiliselt, dünaamiliselt või käsitsi.
 
 ### 2.2 Staatiline
 
@@ -73,7 +71,9 @@ Eraldusfiltri seadistamisel saab seada igale X-tee teenusele vastava `actioncode
 
 ### 2.3 Dünaamiline
 
-Moodustada välja `actioncode` väärtus dünaamiliselt
+Staatiline (kõigi päringute jaoks sama) `action` väärtus töötab hästi ainult ühelaadsete päringute puhul. Kuid X-tee teenuses võidakse edastada mitmesuguseid andmeid. Sealjuures võib samade andmete edastamise eesmärk olla erinev. Sellisel juhul tuleks `action` väärtus moodustada dünaamiselt, s.o konkreetse päringu andmete põhjal.
+
+Varieeruva eesmärgi või andmete korral moodustada välja `actioncode` väärtus dünaamiliselt
 {:.note }
 
 XPath avaldises saab kasutada nii:
@@ -87,7 +87,7 @@ X-tee standardsetest päistest pakub suurimat huvi `issue`. Päis `issue` on mõ
 
 Sõnumi keha on SOAP standardile vastava XML-andmestruktuur. XPath töötlusreegliga saab sealt vajaliku teavet eraldada ja logikirjesse (välja ´action` kanda). Sõnumi keha võib seletuse koostamisel olla väga oluline teabeallikas. Abiks on X-tee levinud praktika peegeldada päringsõnumi sisu vastussõnumis. 
 
-X-teel andmeid vahetavad asutused võivad kasutada täiendavaid, oma valitud päiseelemente.
+X-teel andmeid vahetavad asutused võivad kasutada täiendavaid, oma valitud päiseelemente (selles allpool, jaotises `requestreason`).
 
 ### 2.4 Käsitsi sisestatav
 
@@ -95,14 +95,14 @@ See moodus on mõeldav juhul, kui logikirje salvestatakse Andmesalvestajasse ots
 
 ### 2.5 Eraldi selgitustekst
 
-Iga andmetöötlusfakti eraldi seletamine ja põhjendamine AJ logikirjes võib olla ebapraktiline. Kirjeldus läheks korduvaks ja pikaks. 
+Iga andmetöötlusfakti eraldi seletamine ja põhjendamine AJ logikirjes võib olla ebapraktiline. Kirjeldus võib minna pikaks ja selle kordamine eesti.ee esitusteenuses ei ole UI seisukohalt hea. 
 
 Soovitame asutustel kaaluda eraldi selgitusteksti koostamist.
 {:.note } 
 
 See tekst võib olla pikem ja anda andmekogus toimuvast isikuandmete töötlusest laiema pildi.
 
-AJ esitusteenuses eesti.ee-s saab üles panna teksti, mis selgitab antud andmekogus toimuvat isikuandmete töötlust.
+Eraldi selgitusteksti saab üles panna AJ esitusteenuses eesti.ee-s.
 
 ### 2.6 Andmetöötluspoliitika
 
@@ -123,7 +123,7 @@ Hea koht mõjuanalüüsi ja rakendatud kaitsemeetmete kohta teabe avaldamiseks o
 
 Kasutuskonteksti kirjeldus. Kodanik võib soovida täiendavat teavet menetlusprotsessidest jm avaliku sektori infotöötluse äriloogikast, mis tingisid vajaduse tema andmete töötluse järele.
 
-Seda teabevajadust on otstarbekas rahuldada juhatusega RIHA-s avaldatud andmekogu arhitektuuri- ja protsessikirjelduste ning andmemudelite juurde. 
+Seda teabevajadust on otstarbekas rahuldada kodaniku juhatamisega RIHA-s avaldatud andmekogu arhitektuuri- ja protsessikirjelduste ning andmemudelite juurde. 
 
 ## 3 Standardimine
 
@@ -132,11 +132,11 @@ Seda teabevajadust on otstarbekas rahuldada juhatusega RIHA-s avaldatud andmekog
 Kas X-teel ja/või AJ-s tuleks standardida täiendavaid kirjelduselemente, mis aitaksid selgitusvajadusi rahuldada? 
 {:.adv}
 
-Selliseks elemendiks võiks olla 'PÄRINGU PÕHJUS' (`requestreason`). Esitame järgnevalt kirjelduselemendi 'PÄRINGU PÕHJUS' ettepaneku.
+Selliseks elemendiks võiks olla 'PÄRINGU PÕHJUS' (`requestreason`). Esitame järgnevalt kirjelduselemendi 'PÄRINGU PÕHJUS' standardimisettepaneku.
 
 Ootame ettepaneku kohta arvamusi. Ettepanekut saab eksperimentaalselt kohe praktikas kasutada. Elemendi `requestreason` kohustuslikuks muutmist peame otstarbekaks alles konsensuse ja eksperimentaalse kasutuspraktika tekkimise järel.
 
-Märgime, et üldise kohustuse panemisega (`requestreason` igas X-tee päringus) peab olema ettevaatlik. Kohustuse panemine iseenesest ei taga paremat andmekvaliteeti. Kirjelduselemendist on pigem kahju, kui seda hakatakse täitma formaalselt. Järelevalveks, arvestades tuhandeid X-tee teenuseid, ei ole ressurssi. Seetõttu standard saab välja kasvada asutuste endi kujundatud praktikast. 
+Märgime, et üldise kohustuse panemisega (`requestreason` nõutav igas X-tee päringus) peab olema ettevaatlik. Kohustuse panemine iseenesest ei taga paremat andmekvaliteeti. Kirjelduselemendist oleks pigem kahju, kui seda hakatakse täitma formaalselt. Järelevalveks, arvestades tuhandeid X-tee teenuseid, ei ole kerge ressurssi leida. Seetõttu standard saab välja kasvada asutuste endi kujundatavast praktikast. 
 
 ### 3.2 Kirjelduselement `requestreason`
 
@@ -147,7 +147,7 @@ Kirjelduselement `requestreason`:
 - ei ole kohustuslik
 - sisaldab inimloetavas keeles, andmesubjektile mõistetavat vastust küsimusele "Miks andmeid edastati?"
 - on tekstiväli
-- kasutatav AJ välja `action` koostamiseks AJ eraldufiltri automatiseeritud töötlusreegli abil.
+- on kasutatav AJ välja `action` koostamiseks AJ eraldufiltri automatiseeritud töötlusreegli abil.
 
 ## LISA 1. AJ ülevaade
 
