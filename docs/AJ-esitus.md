@@ -35,3 +35,6 @@ Statistikakogumise vajadus analüüsitakse läbi. Statistikakogumine ei tohi saa
 {:.note}
 
 10 | AJ on võimeline väljastama elutukseteavet välisesse monitooringusüsteemi.
+
+NB! Ettevaatust sõltuvuste lisamisega! AJ esitusteenus tõenäoliselt ei ole nii suure, et vääriks omaette (duubeldatud) masinat, andmebaasi jms. AJ esitusteenus peab sobituma eesti.ee kujundusloogikasse ja kasutaja liikumine portaali erinevate teenuste vahel ei tohi olla tõkestatud. Samas tuleks vältida seoseid komponentidega, mis ei ole absoluutselt vajalikud.
+{:.adv}
