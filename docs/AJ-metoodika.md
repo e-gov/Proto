@@ -2,8 +2,6 @@
 permalink: AJ-soovitused
 ---
 
-KAVAND
-
 <img src='img/VAPP.PNG' style='width: 300px; margin: 0 0 1rem 0;'>
 
 # Soovitusi andmejälgija rakendamiseks
@@ -73,7 +71,7 @@ Eraldusfiltri seadistamisel saab seada igale X-tee teenusele vastava `actioncode
 
 Staatiline (kõigi päringute jaoks sama) `action` väärtus töötab hästi ainult ühelaadsete päringute puhul. Kuid X-tee teenuses võidakse edastada mitmesuguseid andmeid. Sealjuures võib samade andmete edastamise eesmärk olla erinev. Sellisel juhul tuleks `action` väärtus moodustada dünaamiselt, s.o konkreetse päringu andmete põhjal.
 
-Varieeruva eesmärgi või andmete korral moodustada välja `actioncode` väärtus dünaamiliselt
+Varieeruva eesmärgi või andmete korral moodustada välja `actioncode` väärtus dünaamiliselt.
 {:.note }
 
 XPath avaldises saab kasutada nii:
