@@ -22,7 +22,6 @@ AJ on automatiseeritud lahendus - selles mõttes, et isikuandmete töötluse fak
 Logikirjed peavad olema kodanikule arusaadavad, äraseletavad ja vastama kodaniku küsimustele. Kuidas seda - seletamist - automatiseerida?
 
 Seejuures tuleb märkida, et seletuse andmise täielik automatiseerimine ei ole võimalik. 
-{:.note}
 
 ## 1 Selgitusvajadus 
 
@@ -54,7 +53,7 @@ Kuidas seda "suuremat pilti" kodanikule anda? Asutus saab kasutada mitmeid võim
 AJ logikirjes esitatakse menetluse või toimingu nimetus väljas `action`.
 
 Pöörata välja `action` informatiivsusele erilist tähelepanu. 
-{.note }
+{:.note }
 
 Välja `action` saab täita staatiliselt, dünaamiliselt või käsitsi.
 
@@ -63,14 +62,14 @@ Välja `action` saab täita staatiliselt, dünaamiliselt või käsitsi.
 X-tee andmevahetusest tekkiv logikirje moodustatakse eraldusfiltris. Eraldusfiltri seadistamisel määratakse töötlusreegel välja `actioncode` täitmiseks. Tehniliselt on töötlusreegel XPath avaldis, mis kombineerib ühest või mitmest X-tee sõnumi väljast kokku välja `actioncode` väärtuse. Väli `actioncode` esitatakse eesti.ee-s andmesubjektile.
 
 Valida välja `actioncode` staatiline väärtus hoolikalt.
-{.note }
+{:.note }
 
 Eraldusfiltri seadistamisel saab seada igale X-tee teenusele vastava `actioncode` teksti.  
 
 ### 2.3 Dünaamiline
 
 Moodustada välja `actioncode` väärtus dünaamiliselt
-{.note }
+{:.note }
 
 XPath avaldises saab kasutada nii:
 - X-tee standardseid päiseelemente
@@ -93,7 +92,8 @@ See moodus on mõeldav juhul, kui logikirje salvestatakse Andmesalvestajasse ots
 
 Iga andmetöötlusfakti eraldi seletamine ja põhjendamine AJ logikirjes võib olla ebapraktiline. Kirjeldus läheks korduvaks ja pikaks. 
 
-Soovitame asutustel kaaluda eraldi selgitusteksti koostamist. 
+Soovitame asutustel kaaluda eraldi selgitusteksti koostamist.
+{:.note } 
 
 See tekst võib olla pikem ja anda andmekogus toimuvast isikuandmete töötlusest laiema pildi.
 
@@ -125,7 +125,7 @@ Seda teabevajadust on otstarbekas rahuldada juhatusega RIHA-s avaldatud andmekog
 ### 3.1 Vajadus
 
 Kas X-teel ja/või AJ-s tuleks standardida täiendavaid kirjelduselemente, mis aitaksid selgitusvajadusi rahuldada? 
-{.adv}
+{:.adv}
 
 Selliseks elemendiks võiks olla 'PÄRINGU PÕHJUS' (`requestreason`). Esitame järgnevalt kirjelduselemendi 'PÄRINGU PÕHJUS' ettepaneku.
 

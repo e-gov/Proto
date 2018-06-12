@@ -185,15 +185,19 @@ a.nupp:hover {
 }  
 
 .note {
-  border-color: Darkgray;
-  background: Ghostwhite;
+  /* border-color: Darkgray; */
+  border-color: #52E052;
+  /* background: Ghostwhite; */
+  background: #F6F9F8;
   overflow: auto;
 }
 
 .adv {
-  border-color: Darkgray;
+  /* border-color: Darkgray; */
+  border-color: orange;
   border-style: none solid;
-  background: Ghostwhite;
+  /* background: Ghostwhite; */
+  background: #FFEECC;
 }
 
 .ikoon {
