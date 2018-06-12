@@ -5,22 +5,26 @@ permalink: AJ-soovitused
 # Soovitusi andmejälgija rakendamiseks
 {: .no_toc}
 
+12.06.2018
+
 - TOC
 {:toc}
+
+## Sissejuhatus
 
 Andmejälgija (AJ) rakendamisel tõusetub küsimusi, mis vajavad vastust. Samuti koguneb asutustel kogemusi, mis väärivad levitamist. Käesolevas teabekirjas anname soovitusi AJ-ga pakutava teabe informatiivsemaks tegemiseks.
 
 Kuidas hõlpsamini vastata kodanikele, kes AJ-s isikuandmete töötluse logiga tutvumise järel soovivad täpsemaid selgitusi?
-{.adv }
+{:.adv }
 
 AJ on automatiseeritud lahendus - selles mõttes, et isikuandmete töötluse faktid (logikirjed) salvestatakse X-tee andmeliiklusest eraldusfiltri töötlusreeglite automatiseeritud rakendamisega ja logikirjed esitatakse andmesubjektile eesti.ee-s iseteeninduse põhimõttel.
 
 Logikirjed peavad olema kodanikule arusaadavad, äraseletavad ja vastama kodaniku küsimustele. Kuidas seda - seletamist - automatiseerida?
 
 Seejuures tuleb märkida, et seletuse andmise täielik automatiseerimine ei ole võimalik. 
-{.note}
+{:.note}
 
-## Selgitusvajadus 
+## 1 Selgitusvajadus 
 
 Andmesubjektil võib olla mitte üksainus, vaid kimp üksteisega seotud küsimusi.
 
@@ -43,18 +47,18 @@ Kodanik võib tahta teada konkreetse andmebiti edastamise asjaolusid. Terviklike
 
 Kuidas seda "suuremat pilti" kodanikule anda? Asutus saab kasutada mitmeid võimalusi.
 
-## Menetluse/toimingu nimetus (väli `action`)
+## 2 Selgitusvajaduse rahuldamine
+
+### 2.1 Menetluse/toimingu nimetus (väli `action`)
 
 AJ logikirjes esitatakse menetluse või toimingu nimetus väljas `action`.
 
 Pöörata välja `action` informatiivsusele erilist tähelepanu. 
 {.note }
 
-Välja `action` saab täita kolmel viisil.
+Välja `action` saab täita staatiliselt, dünaamiliselt või käsitsi.
 
-### Staatiline
-
-Välja `actioncode` võib täita staatiliselt või dünaamiliselt.
+### 2.2 Staatiline
 
 X-tee andmevahetusest tekkiv logikirje moodustatakse eraldusfiltris. Eraldusfiltri seadistamisel määratakse töötlusreegel välja `actioncode` täitmiseks. Tehniliselt on töötlusreegel XPath avaldis, mis kombineerib ühest või mitmest X-tee sõnumi väljast kokku välja `actioncode` väärtuse. Väli `actioncode` esitatakse eesti.ee-s andmesubjektile.
 
@@ -63,7 +67,7 @@ Valida välja `actioncode` staatiline väärtus hoolikalt.
 
 Eraldusfiltri seadistamisel saab seada igale X-tee teenusele vastava `actioncode` teksti.  
 
-### Dünaamiline
+### 2.3 Dünaamiline
 
 Moodustada välja `actioncode` väärtus dünaamiliselt
 {.note }
@@ -81,11 +85,11 @@ Sõnumi keha on SOAP standardile vastava XML-andmestruktuur. XPath töötlusreeg
 
 X-teel andmeid vahetavad asutused võivad kasutada täiendavaid päiseelemente.
 
-### Käsitsi sisestatav
+### 2.4 Käsitsi sisestatav
 
 See moodus on mõeldav juhul, kui logikirje salvestatakse Andmesalvestajasse otse (vt skeemil - "mitte-X-tee andmekasutuste logimine") ja töötleja on asutuse töötaja. Asutuse töötaja sisestab iga  andmekasutustoimingu kohta seletuse, mis salvestatakse Andmesalvestajasse (välja `action`). Selline käsitsitöö on praktiline tõenäoliselt vaid siis, kui seletuse koostamine on tööprotsessi osa.
 
-## Eraldi selgitustekst
+### 2.5 Eraldi selgitustekst
 
 Iga andmetöötlusfakti eraldi seletamine ja põhjendamine AJ logikirjes võib olla ebapraktiline. Kirjeldus läheks korduvaks ja pikaks. 
 
@@ -95,7 +99,7 @@ See tekst võib olla pikem ja anda andmekogus toimuvast isikuandmete töötluses
 
 AJ esitusteenuses eesti.ee-s saab üles panna teksti, mis selgitab antud andmekogus toimuvat isikuandmete töötlust.
 
-## Andmetöötluspoliitika
+### 2.6 Andmetöötluspoliitika
 
 Konteksti loomiseks ja kodaniku rahustamiseks võib suureks abiks olla hästi koostatud isikuandmete töötluse poliitika.
 
@@ -103,20 +107,22 @@ Kui andmekogul või infosüsteemil on avalik kasutajaliides, siis saab andmetö�
 
 Andmetöötluspoliitika dokumendi saab avaldada ka RIHAs, [https://www.riha.ee](https://www.riha.ee).
 
-## Isikuandmete töötluse mõjuanalüüs
+### 2.7 Isikuandmete töötluse mõjuanalüüs
 
 Kodanik võib soovida kindlust andvat teavet selle kohta, et tema isikuandmete töötlus on põhjendatud, minimaalne ja asjakohased kaitsemeetmed on rakendatud. Vastust võib pakkuda isikuandmete töötluse m
 mõjuanalüüs (ühtse andmekaitsemääruse valguses). 
 
 Hea koht mõjuanalüüsi ja rakendatud kaitsemeetmete kohta teabe avaldamiseks on RIHA.
 
-## Protsessikirjeldus
+### 2.8 Protsessikirjeldus
 
 Kasutuskonteksti kirjeldus. Kodanik võib soovida täiendavat teavet menetlusprotsessidest jm avaliku sektori infotöötluse äriloogikast, mis tingisid vajaduse tema andmete töötluse järele.
 
 Seda teabevajadust on otstarbekas rahuldada juhatusega RIHA-s avaldatud andmekogu arhitektuuri- ja protsessikirjelduste ning andmemudelite juurde. 
 
-## Standardimisvajadus
+## 3 Standardimine
+
+### 3.1 Vajadus
 
 Kas X-teel ja/või AJ-s tuleks standardida täiendavaid kirjelduselemente, mis aitaksid selgitusvajadusi rahuldada? 
 {.adv}
@@ -127,7 +133,7 @@ Ootame ettepaneku kohta arvamusi. Ettepanekut saab eksperimentaalselt kohe prakt
 
 Märgime, et üldise kohustuse panemisega (`requestreason` igas X-tee päringus) peab olema ettevaatlik. Kohustuse panemine iseenesest ei taga paremat andmekvaliteeti. Kirjelduselemendist on pigem kahju, kui seda hakatakse täitma formaalselt. Järelevalveks, arvestades tuhandeid X-tee teenuseid, ei ole ressurssi. Seetõttu standard saab välja kasvada asutuste endi kujundatud praktikast. 
 
-## Kirjelduselement `requestreason`
+### 3.2 Kirjelduselement `requestreason`
 
 Kirjelduselement `requestreason`:
 - esitatakse X-tee päringsõnumi päises
@@ -144,7 +150,7 @@ Andmejälgija, [https://github.com/e-gov/AJ](https://github.com/e-gov/AJ), (AJ),
 
 <img src='img/AJ.PNG' style='width:600px;'>
 
-## LISA 2 AJ logikirje
+## LISA 2. AJ logikirje
 
 AJ protokoll näeb ette iga isikuandmete töötlemise fakti salvestamist 13 andmeväljast koosneva logikirjena.
 
@@ -162,7 +168,7 @@ nr | nimetus    | tüüp       | kohustuslik | semantika
 4  | `receiver` | tekst | ei | Asutus, kellele andmed väljastati. Täidetakse andmete väljastamisel andmekogust teisele asutusele X-tee kaudu. Anda asutuse inimloetav nimi.
 5  | `sender` | tekst | Asutus, kellelt andmed saadi. Täidetakse andmete saamisel teisest asutusest X-tee kaudu. Anda asutuse, vajadusel ka andmekogu inimloetav nimi.
 
-## Sisekasutuseks mõeldud andmeväljad
+### Sisekasutuseks mõeldud andmeväljad
 
 nr | nimetus    | tüüp       | kohustuslik | semantika
 ---|------------|------------|-------------|------------
