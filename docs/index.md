@@ -6,8 +6,8 @@ permalink:
 
 kavandid ja kontseptsioonid
 
-[Tere, maailm! teenuseplatvormi kontseptsioon](Hello)<br>
-[MISP 3 Proof of Concept. Tööde kirjeldus](Tood)<br>
-[Tehniline voog](TehnilineVoog)<br>
+[Soovitusi andmejälgija rakendamiseks](AJ-soovitused)
 [Teenuseplatvormi kontseptsioon](Teenuseplatvorm)
-
+[Tehniline voog](TehnilineVoog)<br>
+[MISP 3 Proof of Concept. Tööde kirjeldus](Tood)<br>
+[Tere, maailm! teenuseplatvormi kontseptsioon](Hello)<br>
