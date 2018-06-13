@@ -15,13 +15,18 @@
 </head>
 
 <body>
-  {% include Pais.html %}
-  
+  {% if page.header %}
+    {% include Pais.html %}
+  {% endif %}
+
   <div id='Tekst'>      
     {{ content }}
   </div>
   
+{% if page.header %}
   {% include Jalus.html %}
+{% endif %}
+
 </body>
 
 </html>

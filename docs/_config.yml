@@ -8,4 +8,6 @@ defaults:
       path: "" # Kõik failid
     values:
       layout: "Times"
+    page:
+      header: true  
 

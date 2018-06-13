@@ -1,8 +1,9 @@
 ---
 permalink: Soltuvused
+header: false
 ---
 
-# Tarkvarasõltuvustest ja nende ravist
+# Tarkvarasõltuvustest (ja nende ravist)
 
 Eesti on sõltumatu riik. See tähendab, et ÜRO-s, Euroopa Nõukogus vms hääletamisel lähtutakse ainult eesti rahva huvist. Ainult eesti rahva tahe. Keegi ei saa väljast juhtnööre anda. Ega Eesti delegaat vaata, kuidas teised hääletavad. Eesti esindajad on oma otsustustes ja seisukohtades sõltumatud ja vabad.
 
