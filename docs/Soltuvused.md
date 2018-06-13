@@ -4,11 +4,11 @@ permalink: Soltuvused
 
 # Sõltuvuste ravi
 
-Eesti on sõltumatu riik. See tähendab, et ÜRO-s, Euroopa Nõukogus vms hääletamisel lähtutakse ainult eesti rahva huvist. Ainult eesti rahva tahe. Keegi ei saa väljast juhtnööre anda. Ega vaadata, kuidas teised hääletavad. Eesti esindajad on oma otsustustes ja seisukohtades sõltumatud ja vabad.
+Eesti on sõltumatu riik. See tähendab, et ÜRO-s, Euroopa Nõukogus vms hääletamisel lähtutakse ainult eesti rahva huvist. Ainult eesti rahva tahe. Keegi ei saa väljast juhtnööre anda. Ega Eesti delegaat vaata, kuidas teised hääletavad. Eesti esindajad on oma otsustustes ja seisukohtades sõltumatud ja vabad.
 
-Tegelikult see muidugi nii ei ole. Enne hääletamist tulevad paljud mõjutama ja ära rääkima. Mõni libedamalt, teine brutaalsemalt. Tehakse ettepanekuid telgitagusteks diilideks. Tahetase saada Eesti toetust. Pakutakse ka midagi vastu. Jne. Lähemalt vaadates Eesti võib-olla ei olegi oma otsustustes nii väga vaba, vaid on (käest-jalust?) seotud riikidevaheliste suhete keeruka võrgustikuga.
+Tegelikult see muidugi nii ei ole. Enne hääletamist paljud tulevad mõjutama, meelitama, diili tegema, ära rääkima.  Tahetakse saada Eesti toetust. Pakutakse ka midagi vastu. Või tahetakse hoopis lihtsameelset ära kasutada. Telgitagune diplomaatia on olnud, on ja jääb. Seetõttu lähemalt vaadates Eesti võib-olla ei olegi oma otsustustes nii väga vaba. Vaid on (käest-jalust?) seotud riikidevaheliste suhete keeruka võrgustikuga.
 
-Tarkvaras kohtame ka sõltuvusi. Java rakenduses on need kirjas `pom.xml` failis:
+Tarkvaras on sõltuvused. Java rakenduses on need kirjas `pom.xml` failis:
 
 ```xml
     <dependencies>
@@ -66,7 +66,7 @@ Teegisõltuvuste juures on sageli probleemiks tarkvara muutlikkus. Kui teekide v
 
 Igas suuremas programmeerimiskeeles või -platvormil on üks või mitu paketihaldurit. Paketihaldur ühitab tavaliselt arvutis kasutatavat tööriista ja keskset paketihoidlat. Nt:
 - [npm](https://www.npmjs.com/) (Javascript)
-- [Maven](https://maven.apache.org/) ja [Maven Central Repository](https://search.maven.org/)
+- [Maven](https://maven.apache.org/) ja [Maven Central Repository](https://search.maven.org/) (Java)
 - [Cargo](https://doc.rust-lang.org/cargo/index.html) ja [crates.io](https://crates.io/) (Rust)
 - [APT](https://en.wikipedia.org/wiki/APT_(Debian)), [Nexus](https://www.sonatype.com/nexus-repository-sonatype) (Linux),
 
