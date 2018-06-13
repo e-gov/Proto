@@ -8,7 +8,7 @@ Eesti on sõltumatu riik. See tähendab, et ÜRO-s, Euroopa Nõukogus vms hääl
 
 Tegelikult see muidugi nii ei ole. Enne hääletamist paljud tulevad mõjutama, meelitama, diili tegema, ära rääkima.  Tahetakse saada Eesti toetust. Pakutakse ka midagi vastu. Või tahetakse hoopis lihtsameelset ära kasutada. Telgitagune diplomaatia on olnud, on ja jääb. Seetõttu lähemalt vaadates Eesti võib-olla ei olegi oma otsustustes nii väga vaba. Vaid on (käest-jalust?) seotud riikidevaheliste suhete keeruka võrgustikuga.
 
-Tarkvaras on sõltuvused. Java rakenduses on need kirjas `pom.xml` failis:
+Ka tarkvaras on sõltuvused. Java rakenduses on need kirjas `pom.xml` failis:
 
 ```xml
     <dependencies>
