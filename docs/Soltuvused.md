@@ -76,7 +76,7 @@ Igas suuremas programmeerimiskeeles või -platvormil on üks või mitu paketihal
 - [npm](https://www.npmjs.com/) (Javascript)
 - [Maven](https://maven.apache.org/) ja [Maven Central Repository](https://search.maven.org/) (Java)
 - [Cargo](https://doc.rust-lang.org/cargo/index.html) ja [crates.io](https://crates.io/) (Rust)
-- [APT](https://en.wikipedia.org/wiki/APT_(Debian)), [Nexus](https://www.sonatype.com/nexus-repository-sonatype) (Linux),
+- [APT](https://en.wikipedia.org/wiki/APT_(Debian)), [Nexus](https://www.sonatype.com/nexus-repository-sonatype) (Linux).
 
 Arendusajast kulubki märkimisväärne osa tööks paketihaldurite - ja repodega. Pakettide otsimine, uurimine ja hindamine. Nagu märgib üks asjatundja: raske ei ole mitte Java kui programmeerimiskeel, vaid Maven, Gradle jms.
 
@@ -103,6 +103,8 @@ G  võtab sõna, ja nõuab, et üleantav kood peab vastama koodi dokumenteerimis
 jne.
 
  Kui kõik nõuded-soovid kirja panna, siis tõenäoliselt kujuneb töömaht üüratuks või süsteem üldse võimatuks, sest soovid on vastuolulised.
+
+<p>* * *</p>
 
 Seetõttu arenduse alustamisel, aga ka hiljem, oluline liigsetest sõltuvustest vabanemine – sõltuvuste ravi – kui soovite. Võib-olla on see projekti edu saavutamiseks üks tähtsamaid asju.
 
