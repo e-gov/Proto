@@ -21,4 +21,4 @@ Kavandeid ja prototüüpe
 
 [MISP 3 Proof of Concept. Tööde kirjeldus](Tood)<br>
 
-[Tere, maailm! teenuseplatvormi kontseptsioon](Hello)<br>
+[Tere, maailm!](Hello)<br>
