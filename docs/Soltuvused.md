@@ -97,7 +97,7 @@ jne.
 
  Kui kõik nõuded-soovid kirja panna, siis tõenäoliselt kujuneb töömaht üüratuks või süsteem üldse võimatuks, sest soovid on vastuolulised.
 
-Seetõttu arenduse alustamisel, aga ka hiljem, oluline liigsetest sõltuvustest vabanemine. Võib-olla on see projekti edu saavutamiseks üks tähtsamaid asju.
+Seetõttu arenduse alustamisel, aga ka hiljem, oluline liigsetest sõltuvustest vabanemine – sõltuvuste ravi – kui soovite. Võib-olla on see projekti edu saavutamiseks üks tähtsamaid asju.
 
 [1] [https://en.wikipedia.org/wiki/Dependency_hell](https://en.wikipedia.org/wiki/Dependency_hell)<br>
 [2] [https://research.swtch.com/version-sat](https://research.swtch.com/version-sat)
