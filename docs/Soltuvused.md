@@ -114,5 +114,14 @@ Iga nõude, elemendi, töömeetodi, komponendi, tehnoloogia juures saab küsida:
 - Kas seda on tingimata vaja? Kas seda on veel vaja?
 - Kas sama tulemuse saaks kuidagi teisiti, lihtsamalt?
 
+Kriitiliselt läbi vaadata `pom.xml`, `package.json` jms teeginimekirjad, nõuete loetelud, aga ka arenduse protsessikirjeldused - ja vabaneda ballastist vabaneda.
+
+Vabaneda kommertstarkvarast, põgeneda _walled garden_-test [3]. See tähendab vaba tarkvara ja standardsete andmevormingute kasutamist. 
+
+Vabaneda "tootjalukkudest". Kuid ühest-ainsast teenusepakkujast või arendajast sõltuvusest vabanemine ei ole alati võimalik, sest piiratud turu ja ebaühtlaselt koondunud kompetentsi tingimustes võib see tähendada üldse kvalifitseeritud teenusest või tööjõust ilmajäämist. 
+
+Sõltuvuste kõrval (_dependency_-nimekirjad) panna kirja ka "sõltumatused". Nii võiks kujuneda teatud "tarkvara iseseisvusdeklaratsioon".
+
 [1] [https://en.wikipedia.org/wiki/Dependency_hell](https://en.wikipedia.org/wiki/Dependency_hell)<br>
-[2] [https://research.swtch.com/version-sat](https://research.swtch.com/version-sat)
+[2] [https://research.swtch.com/version-sat](https://research.swtch.com/version-sat)<br>
+[3] [https://en.wikipedia.org/wiki/Closed_platform](https://en.wikipedia.org/wiki/Closed_platform)
