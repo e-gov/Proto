@@ -51,14 +51,15 @@ Nii on igas levinud programmeerimiskeeles. Kitsamas mõttes on sõltuvus (_depen
 - sõltuvus tellija heitlikest tahtmistest
 - sõltuvus vajaduste äralangemisest
 - sõltuvus uute, ettearvamatute asjaolude ilmumisest
-- whatever
-- jne
+- jne. _Whatever_
 
-Sõltuvuseks on ka sõltuvus ideedest. Sõltuvus võtmeinimestest. Whatever. 
+Omamoodi sõltuvus on ka sõltuvus ideedest.
 
 Sõltuvus tööriistadest. Need on tihti mingitest kõrvalistest, projektiga üldse mitte seotud eesmärkidest lähtudes ette antud. Või valitakse võimas tööriist, kuid selle kasutamise õppimine nõuab aega. Või võetakse see, mida on varem kasutatud ja mida tuntakse. Sõltuvus harjumusest.
 
 Sõltuvus moetrendidest on IT-s väga levinud ja seetõttu oluline nähtus. 
+
+Sõltuvus võtmeinimestest.
 
 Teegisõltuvuste juures on sageli probleemiks tarkvara muutlikkus. Kui teekide vanu versioone enam ei toetata, siis tuleb need uuemate vastu välja vahetada. Muidu ei peeta tarkvara enam turvaliseks.
 
@@ -76,7 +77,7 @@ Arendusajast kulubki märkimisväärne osa tööks paketihaldurite - ja repodega
 
 Sõltuvusi ei saa täielikult vältida. Üheski reaalses projektis ei saa täiesti läbi väliste ressurssideta. Teiselt poolt peab rakendus välistele osapooltele midagi pakkuma.
 
-Välised ressursid ja osapooled ei ole täielikult meie kontrolli all. Meil ei ole võimalik saada isegi täielikku, usaldusväärset teavat kõigi sõltuvuste kohta. Sellele vaatamata on käibel maagiline termin _dependency management_, sõltuvuste juhtimine. Sellega tähistatakse tegevusi, mis peaksid sõltuvusprobleeme kuidagi lahendama või vähemalt leevendama.
+Välised ressursid ja osapooled ei ole täielikult meie kontrolli all. Meil ei ole võimalik saada isegi täielikku, usaldusväärset teavet kõigi sõltuvuste kohta. Sellele vaatamata on käibel maagiline termin _dependency management_, sõltuvuste juhtimine. See tähistab tegevusi, mis peaksid sõltuvusprobleeme kuidagi lahendama või vähemalt leevendama.
 
 Sõltuvused on üksteisega seotud, tihti mittetriviaalselt. Seda väljendab kujund _dependency hell_ [1]. Teoreetiline tulemus on "Dependency hell is NP-complete." [2] Tavakeelde ümberpandult tähendab see, et sõltuvuste "juhtimine" täieliku optimeerimise mõttes on matemaatiliselt võimatu. Reaalsem on rääkida sõltuvustega toimetulemisest.
 
@@ -91,12 +92,12 @@ C soovib, et kasutataks innovatiivset turvatehnoloogiat CSP. CSP võiks lisada (
 D seab väga oluliseks nõudeks, et laadilehtede vormistamisel kasutatakse Sass-i. Sass on kasutusel suurtes süsteemides. Meie süsteem ei ole suur.<br>
 E paneb ette kasutada tehnoloogiat X, "kuna seda kasutab Facebook". Meie insenerid ei ole Facebook-st.<br>
 F seab nõudeks, et projektis kasutatakse täisautomatiseeritud ehitustsüklit. Täisautomatiseeritud ehitustsüklit on üritatud juurutada kaks aastat.<br>
-G  võtab sõna, ja nõuab, et üleantav kood peab vastama koodistandardile Y. Koodistandardit Y kasutab Google. Kuid koodistandardites ei ole ühtset seisukohta, kui palju ja kas üldse kood peaks olema dokumenteeritud.<br>
+G  võtab sõna, ja nõuab, et üleantav kood peab vastama koodi dokumenteerimisstandardile Y. Koodistandardit Y kasutab Google. Kuid internetis ringi vaadates, asjatundjate arvamusi lugedes kujuneb pilt, et koodistandardites ei ole ühtset seisukohta, kui palju ja kas üldse kood peaks olema dokumenteeritud.<br>
 jne.
 
  Kui kõik nõuded-soovid kirja panna, siis tõenäoliselt kujuneb töömaht üüratuks või süsteem üldse võimatuks, sest soovid on vastuolulised.
 
-Seetõttu on oluline liigsetest sõltuvustest vabanemine. Võib-olla on see projekti edu saavutamiseks üks tähtsamaid asju.
+Seetõttu arenduse alustamisel, aga ka hiljem, oluline liigsetest sõltuvustest vabanemine. Võib-olla on see projekti edu saavutamiseks üks tähtsamaid asju.
 
 [1] [https://en.wikipedia.org/wiki/Dependency_hell](https://en.wikipedia.org/wiki/Dependency_hell)<br>
 [2] [https://research.swtch.com/version-sat](https://research.swtch.com/version-sat)
