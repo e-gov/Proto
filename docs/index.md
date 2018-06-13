@@ -5,6 +5,8 @@ header: false
 
 Kavandeid ja prototüüpe
 
+<p>&nbsp;</p>
+
 [Tarkvarasõltuvustest (ja nende ravist)](Soltuvused)
 
 [AJ esitusteenus](AJ-esitus)
