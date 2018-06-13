@@ -2,7 +2,7 @@
 permalink: Soltuvused
 ---
 
-# Sõltuvuste ravi
+# Tarkvarasõltuvustest ja nende ravist
 
 Eesti on sõltumatu riik. See tähendab, et ÜRO-s, Euroopa Nõukogus vms hääletamisel lähtutakse ainult eesti rahva huvist. Ainult eesti rahva tahe. Keegi ei saa väljast juhtnööre anda. Ega Eesti delegaat vaata, kuidas teised hääletavad. Eesti esindajad on oma otsustustes ja seisukohtades sõltumatud ja vabad.
 
@@ -61,6 +61,10 @@ Sõltuvus moetrendidest on IT-s väga levinud ja seetõttu oluline nähtus.
 
 Sõltuvus võtmeinimestest.
 
+Funktsionaalsed sõltuvused.
+
+Mittefunktsionaalsed sõltuvused.
+
 Teegisõltuvuste juures on sageli probleemiks tarkvara muutlikkus. Kui teekide vanu versioone enam ei toetata, siis tuleb need uuemate vastu välja vahetada. Muidu ei peeta tarkvara enam turvaliseks.
 
 Ühe enam levib tarkvara kokkupanemine tükkidest (_packages_). See tähendab, et ei kirjutata enam ühesainsas programmeerimiskeeles, standardteegi abil, vaid assembleeritakse erinevaid, reeglina vabavaralisi koodipakette. Koosluse kooshoidmine võib olla problemaatiline, sest paketid ei tarvitse olla üksteisega kokkusobivad. Paketihaldur (_package manager_) on tarkvara, mis aitab komponte hallata ja kokku panna.
@@ -98,6 +102,12 @@ jne.
  Kui kõik nõuded-soovid kirja panna, siis tõenäoliselt kujuneb töömaht üüratuks või süsteem üldse võimatuks, sest soovid on vastuolulised.
 
 Seetõttu arenduse alustamisel, aga ka hiljem, oluline liigsetest sõltuvustest vabanemine – sõltuvuste ravi – kui soovite. Võib-olla on see projekti edu saavutamiseks üks tähtsamaid asju.
+
+Ravi ei ole kerge. Kuid ei ole mõtet viivitada.
+
+Iga nõude, elemendi, töömeetodi, komponendi, tehnoloogia juures saab küsida:
+- Kas seda on tingimata vaja? Kas seda on veel vaja?
+- Kas sama tulemuse saaks kuidagi teisiti, lihtsamalt?
 
 [1] [https://en.wikipedia.org/wiki/Dependency_hell](https://en.wikipedia.org/wiki/Dependency_hell)<br>
 [2] [https://research.swtch.com/version-sat](https://research.swtch.com/version-sat)
