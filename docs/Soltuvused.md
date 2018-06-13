@@ -5,6 +5,8 @@ header: false
 
 # Tarkvarasõltuvustest (ja nende ravist)
 
+Priit Parmakson
+
 Eesti on sõltumatu riik. See tähendab, et ÜRO-s, Euroopa Nõukogus vms hääletamisel lähtutakse ainult eesti rahva huvist. Ainult eesti rahva tahe. Keegi ei saa väljast juhtnööre anda. Ega Eesti delegaat vaata, kuidas teised hääletavad. Eesti esindajad on oma otsustustes ja seisukohtades sõltumatud ja vabad.
 
 Tegelikult see muidugi nii ei ole. Enne hääletamist paljud tulevad mõjutama, meelitama, diili tegema, ära rääkima.  Tahetakse saada Eesti toetust. Pakutakse ka midagi vastu. Või tahetakse hoopis lihtsameelset ära kasutada. Telgitagune diplomaatia on olnud, on ja jääb. Seetõttu lähemalt vaadates Eesti võib-olla ei olegi oma otsustustes nii väga vaba. Vaid on (käest-jalust?) seotud riikidevaheliste suhete keeruka võrgustikuga.
