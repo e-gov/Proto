@@ -9,15 +9,15 @@ header: false
 - TOC
 {:toc}
 
-## Protsess
+## 1 Protsess
 
 <img src='img/CMS.PNG' width='700'>
 
-## Vajadused
+## 2 Vajadused
 
 Artiklite kirjutamine/toimetamine
 - tekstitöötluse erifunktsioonid
-- collaborative writing - EI
+- _collaborative writing_ (mitte tingimata)
 - mallid
 - kujunduselemendid
 
@@ -34,9 +34,9 @@ Lõimitud rakendused
 Ehitamine
 - kiire ehitus- ja avaldamistsükkel
 - staatiliselt ehitatud sait (soovituslik)
-- incremental build (soovituslik)
+- _incremental build_ (soovituslik)
 
-# Soovitused
+# 3 Soovitused
 
 Redaktor | Otstarbekas on valida võimas, laiendatav tekstiredaktor. Tellida erifunktsioonide arendus. Sobida võiksid nt **Atom**, **Visual Studio Code**, põhimõtteliselt ka **Microsoft Word** vms. Kaks esimest on laiendatavad Javascript, kolmas Visual Basic keeles. Põhimõtteliselt võiks sobida ka **Confluence**. |
 Artiklite salvestamine | Võtmeelemendid on jätkusuutlik vorming, masintöödeldavus ja versioonihaldus. Jätkusuutlikkus tähendab, et tekste saab vajadusel teise süsteemi üle kanda. Masintöödeldavus tähendab, et ehitusvahend saab tekstidest saidi ehitada. Versioonihaldus tähendab, et toimetaja saab aru, kui ta teise töö üle kirjutab. Reaalajas _collaborative writing_ minu meelest ei ole tingimata vajalik. Paremini vastavad nendele nõudmistele **Markdown** ja **git**.
