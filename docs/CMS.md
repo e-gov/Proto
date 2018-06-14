@@ -6,6 +6,8 @@ header: false
 # CMS valikust
 {: .no_toc}
 
+{: .toc}
+
 ## Protsess
 
 <img src='img/CMS.PNG' width='700'>
@@ -35,7 +37,7 @@ Ehitamine
 
 # Soovitused
 
-Redaktor | Otstarbekas on valida võimas, laiendatav tekstiredaktor. Tellida erifunktsioonide arendus. Sobib nt Atom, Visual Studio Code, Microsoft Word vms |
+Redaktor | Otstarbekas on valida võimas, laiendatav tekstiredaktor. Tellida erifunktsioonide arendus. Sobida võiksid nt **Atom**, **Visual Studio Code**, põhimõtteliselt ka **Microsoft Word** vms. Kaks esimest on laiendatavad Javascript, kolmas Visual Basic keeles. Põhimõtteliselt võiks sobida ka **Confluence**. |
 Artiklite salvestamine | Võtmeelemendid on jätkusuutlik vorming, masintöödeldavus ja versioonihaldus. Jätkusuutlikkus tähendab, et tekste saab vajadusel teise süsteemi üle kanda. Masintöödeldavus tähendab, et ehitusvahend saab tekstidest saidi ehitada. Versioonihaldus tähendab, et toimetaja saab aru, kui ta teise töö üle kirjutab. Reaalajas _collaborative writing_ minu meelest ei ole tingimata vajalik. Paremini vastavad nendele nõudmistele **Markdown** ja **git**.
 Rakendused | Hoida **git** koodirepo(de)s tavalisel viisil 
 Ehitusvahend | Genereerib artiklite, mallide, kujunduselementide, infoarhitektuuri põhjal saidi, sh lõimib rakendused
