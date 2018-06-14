@@ -3,7 +3,7 @@ permalink: CMS
 header: false
 ---
 
-# CMS valikust
+# eesti.ee tarkvara valikust
 {: .no_toc}
 
 - TOC
