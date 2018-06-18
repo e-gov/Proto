@@ -7,6 +7,8 @@ Kavandeid ja prototüüpe
 
 <p>&nbsp;</p>
 
+[Elutuksestandard](Elutukse)
+
 [Tarkvarasõltuvustest (ja nende ravist)](Soltuvused)
 
 [AJ esitusteenus](AJ-esitus)
