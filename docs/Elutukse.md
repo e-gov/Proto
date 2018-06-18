@@ -6,7 +6,7 @@ permalink: Elutukse
 
 18.06.2018
 
-(standardikavand)
+standardikavand
 
 Käesolev dokument koondab elutukse otspunktide ehitamise nõudeid ja head praktikat. Eesmärk on tõsta e-teenuste monitoorimise taset, sest palju on veel rakendusi, millel elutukse funktsionaalsus üldse puudub. Samuti on eesmärgiks elutukseteabe vorminguid ühtlustada. Ühtlustatud vorming võib hõlbustada nii otspunktide arendamist kui ka rakenduste monitoorimist.
 
