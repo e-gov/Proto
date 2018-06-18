@@ -2,15 +2,15 @@
 permalink: Elutukse
 ---
 
-# Elutuksestandard
+# Elutukse
 
 18.06.2018
 
-(kavand)
+(standardikavand)
 
 Käesolev dokument koondab elutukse otspunktide ehitamise nõudeid ja head praktikat. Eesmärk on tõsta e-teenuste monitoorimise taset, sest palju on veel rakendusi, millel elutukse funktsionaalsus üldse puudub. Samuti on eesmärgiks elutukseteabe vorminguid ühtlustada. Ühtlustatud vorming võib hõlbustada nii otspunktide arendamist kui ka rakenduste monitoorimist.
 
-Elutukset võib teostada mitmel viisil. Käesolev nõuetekogum ei ole "kivisse raiutud". Nõuete kasutamisel on mõistlik nende vajadust ja rakendatavust hinnata, vastavalt konkreetse rakenduse seirevajadustest.
+Käesolev nõuetekogum ei ole "kivisse raiutud" ega käsitle kõiki võimalusi elutukse teostamiseks. Näiteks võib elutukset väljastada ka _push_-põhimõttel (s.t rakendus saadab omal algatusel seisunditeavet tarbijale). Siin on lähtutud _pull_-põhimõttest (tarbija pöördub ise elutukseotspunkti poole). Nõuete kasutamisel on mõistlik nende vajadust ja rakendatavust hinnata, vastavalt konkreetse rakenduse seirevajadustest.
 
 ## Elutukse
 
@@ -104,3 +104,5 @@ Näide 2. Vastuse struktuur (TARA-Demo)
 RIA MFN-is on elutuksenõue sõnastatud järgmiselt [https://e-gov.github.io/MFN/#17.3](https://e-gov.github.io/MFN/#17.3):
 
 > "Süsteemi iga eraldi paigaldatav osa peab logimisel (näiteks aadressilt heartbeat.json) väljastama masinloetaval kujul oma nime ja versiooninumbri, oluliste väliste süsteemide oleku, viimase käivitamise aja, pakendamise aja ning serveriaja."
+
+15.\ Lihtsa elutukse lisamine peaks olema triviaalne. Täpsema ja usaldusväärsema olekuteabe tootmine aga nõuab ulatuslikuma enesediagnostika sisseehitamist, samuti meetodeid välisteenuste ülevaloleku kontrollimiseks. Praktiline lähenemine seetõttu võiks olla elutukse funktsionaalsuse arendamisel arvestada ka arendusressurssi. 
