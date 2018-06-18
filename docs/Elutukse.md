@@ -38,18 +38,20 @@ Elutukse on eelkõige rakenduse tasandi enesediagnostika. Elutukse on üks, aga 
 
 8\. **Elemendid**.
 
-element | kohustuslik | selgitus
---------|-------------|----------
-`status` | jah | parameeter, mis indikeerib rakenduse töökorras olekut. Võimalikud väärtused: `UP`, `DOWN`
-`name`  | jah | rakenduse nimi
-`description` | ei | rakenduse pikem nimi või lühike kirjeldus
-`version` |  | rakenduse versioon
-`buildTime` |  | Rakenduse ehitamise aeg (datetime)
-`startTime` |  | Rakenduse käivitamise aeg (datetime)
+Elemendid valida vastavalt konkreetsele seirevajadusele.
+
+element | selgitus
+--------|-----------
+`status` | parameeter, mis indikeerib rakenduse töökorras olekut. Võimalikud väärtused: `UP`, `DOWN`
+`name`  | rakenduse nimi
+`description` | rakenduse pikem nimi või lühike kirjeldus
+`version` | rakenduse versioon
+`buildTime` | Rakenduse ehitamise aeg (datetime)
+`startTime` | Rakenduse käivitamise aeg (datetime)
 `uptime` | kaua rakendus on üleval olnud.
-`dependencies` |  | Sisaldab nimekirja välistest süsteemidest, millest rakendus sõltub. Väliste süsteemide, millega on võimalik ühendust saada, status olekuna kuvatakse `UP`, mittevastavate süsteemide korral `DOWN`. Kui mõni väline süsteem, millest rakendus sõltub, on `DOWN`, siis on ka vastuse üldine staatus `DOWN`.
-`dependencies.status` |  | Välise süsteemi status. Võimalikud väärtused: `UP`, `DOWN`. 
-`dependencies.name` |  | Välise süsteemi lühinimetus.
+`dependencies` | Sisaldab nimekirja välistest süsteemidest, millest rakendus sõltub. Väliste süsteemide, millega on võimalik ühendust saada, status olekuna kuvatakse `UP`, mittevastavate süsteemide korral `DOWN`. Kui mõni väline süsteem, millest rakendus sõltub, on `DOWN`, siis on ka vastuse üldine staatus `DOWN`.
+`dependencies.status` | Välise süsteemi status. Võimalikud väärtused: `UP`, `DOWN`. 
+`dependencies.name` | Välise süsteemi lühinimetus.
 
 9\. **Ajavormingud**. Ajamomendid tuleks esitada nii masin- kui ka inimloetavalt:
 - Unix epoch vorming on masinloetav
