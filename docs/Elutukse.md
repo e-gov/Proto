@@ -1,5 +1,6 @@
 ---
 permalink: Elutukse
+footer: true
 ---
 
 # Elutukse
@@ -41,13 +42,13 @@ Näide 2. Vastuse struktuur (TARA-Demo)
 }
 ```
 
-1\. **Elutukse** (_heartbeat_) on rakenduse poolt reaalajas väljastatav teave iseenda seisundi kohta.
+1\. **Elutukse** (_heartbeat_) on rakenduse poolt reaalajas väljastatav teave iseenda seisundi või säilitatud viimase käivitamise tulemi kohta.
 
 2\. **Kohustuslikkus**. Süsteemi iga eraldi paigaldatav osa peab väljastama elutukset.
 
 Elutukse on eelkõige rakenduse tasandi enesediagnostika. Elutukse on üks, aga mitte ainus seirevahend. Rakendused paiknevad mitmekihilises IT-taristus. Igas kihis võib olla oma diagnostika ja seire.
 
-3\. **Inim- ja masinkasutaja**. Elutukse kasutajaks on ka rakenduse haldur (teenusehaldur) - inimesel peab olema võimalus teha `GET` päring elutukse otspunkti vastu veebisirvikust. Kuid peamiseks kasutajaks on seirelahendus (nt Zabbix), kust tehakse päringuid elutukse otspunkti poole.
+3\. **Inim- ja masinkasutaja**. Elutukse kasutajaks on ka rakenduse haldur (teenusehaldur) - inimesel peaks olema võimalus teha `GET` päring elutukse otspunkti vastu veebisirvikust. Kuid peamiseks kasutajaks on seirelahendus (nt Zabbix), kust tehakse päringuid elutukse otspunkti poole.
 
 4\. **Sise- ja väliskasutaja**. Elutukset võib kasutada: 1) rakendust käitav organisatsioon ise; 2) rakendust kasutav teine organisatsioon või rakendus. Vastavalt võib elutuksest teha kaks versiooni: sise- ja väliskasutuseks.
 
@@ -59,9 +60,11 @@ Elutukse on eelkõige rakenduse tasandi enesediagnostika. Elutukse on üks, aga 
 
 8\. **Vorming**. Elemendid valida vastavalt konkreetsele seirevajadusele.
 
+Elutukseraporti vormingut on raske standardida. Raport võib seisneda lihtsas ülevaloleku signaalis aga võib olla ka üksikasjalik aruanne läbiviidud diagnostiliste testide tulemustest. Järgnevas tabelis on valik tüüpilisi elemente.
+
 element | selgitus
 --------|-----------
-`status` | parameeter, mis indikeerib rakenduse töökorras olekut. Võimalikud väärtused: `UP`, `DOWN`
+`status` | parameeter, mis indikeerib rakenduse töökorras olekut. Võimalikud väärtused: `UP`, `DOWN`. Märkus. Praktikas kasutatakse ka teisi, nt `ACTIVE` jms.
 `name`  | rakenduse nimi
 `description` | rakenduse pikem nimi või lühike kirjeldus
 `version` | rakenduse versioon
@@ -81,6 +84,8 @@ element | selgitus
 - teenuse poole pöördumiste arv
   - nt jooksva päeva, eelmise päeva jooksul
 
+Seejuures elutukse ei asenda süsteemi logimist.
+  
 11\. **Töökorras oleku tähendus**. Rakendus ei tohiks staatust `UP` saata ilma rakenduse oluliste sisemiste komponentide, aga samuti oluliste väliste sõltuvuste töökorras olekus veendumata. Näiteks, kuid rakenduse koosseisus on andmebaas, siis tuleks kontrollida, kas andmebaas vastab; vajadusel teha kontroll-kirjesalvestus (mis võimaldab veenduda, et andmebaasi salvestamine on ka tegelikult võimalik). 
 
 12\. **Avalikkus**. Avaliku kasutajaliidesega või API-ga rakenduse elutukse peaks samuti olema avalik.
@@ -93,7 +98,9 @@ RIA MFN-is on elutuksenõue sõnastatud järgmiselt [https://e-gov.github.io/MFN
 
 > "Süsteemi iga eraldi paigaldatav osa peab logimisel (näiteks aadressilt heartbeat.json) väljastama masinloetaval kujul oma nime ja versiooninumbri, oluliste väliste süsteemide oleku, viimase käivitamise aja, pakendamise aja ning serveriaja."
 
-15\. **Arendusressurss**. Lihtsa elutukse lisamine peaks olema triviaalne. Täpsema ja usaldusväärsema olekuteabe tootmine aga nõuab ulatuslikuma enesediagnostika sisseehitamist, samuti meetodeid välisteenuste ülevaloleku kontrollimiseks. Praktiline lähenemine seetõttu võiks olla elutukse funktsionaalsuse arendamisel arvestada ka arendusressurssi. 
+15\. **Praktilisi aspekte**. Lihtsa elutukse lisamine peaks olema triviaalne. Täpsema ja usaldusväärsema olekuteabe tootmine aga nõuab ulatuslikuma enesediagnostika sisseehitamist, samuti meetodeid välisteenuste ülevaloleku kontrollimiseks. Praktiline lähenemine seetõttu võiks olla elutukse funktsionaalsuse arendamisel arvestada ka arendusressurssi.
+
+Elutukse pidamine ja väljastamine ei tohi olulisel määral mõjutada rakenduse sisulist tööd (käideldavust).
 
 ## Viiteid
 

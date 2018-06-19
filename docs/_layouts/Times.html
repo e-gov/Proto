@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ site.baseurl }}/css/Times.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/Github.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/Colourful.css">
 
 </head>
 
@@ -25,7 +25,7 @@
     {{ content }}
   </div>
   
-{% if page.header %}
+{% if page.header or page.footer %}
   {% include Jalus.html %}
 {% endif %}
 

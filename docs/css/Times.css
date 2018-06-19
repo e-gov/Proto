@@ -109,7 +109,7 @@ th { font-weight: normal; font-style: italic; text-align: center; }
 /*#region Kood */
 code {
   font-family: monospace;
-  font-size: 17px;
+  font-size: 16px;
   color: black !important;
   background-color: #fcfcfb;
   border: 1px solid #e6e6de;
