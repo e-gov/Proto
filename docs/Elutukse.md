@@ -52,6 +52,8 @@ Elutukse on eelkõige rakenduse tasandi enesediagnostika. Elutukse on üks, aga 
 
 4\. **Sise- ja väliskasutaja**. Elutukset võib kasutada: 1) rakendust käitav organisatsioon ise; 2) rakendust kasutav teine organisatsioon või rakendus. Vastavalt võib elutuksest teha kaks versiooni: sise- ja väliskasutuseks.
 
+_Do to others as you would have them do to you_ - kui tahame teistelt teenuseosutajatelt elutukset, siis peame seda ka ise "allavoolu" pakkuma.
+
 5\. **Elutukse otspunkt**. Elutukset pakutakse HTTP(S) otspunktist, mille poole saab pöörduda `GET` päringuga.
 
 6\. **Elutukse URL** moodustatakse rakenduse pea-URL-st, millele lisatakse `/heartbeat`, `/status` vms.
