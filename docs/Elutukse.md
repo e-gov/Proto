@@ -94,3 +94,9 @@ RIA MFN-is on elutuksenõue sõnastatud järgmiselt [https://e-gov.github.io/MFN
 > "Süsteemi iga eraldi paigaldatav osa peab logimisel (näiteks aadressilt heartbeat.json) väljastama masinloetaval kujul oma nime ja versiooninumbri, oluliste väliste süsteemide oleku, viimase käivitamise aja, pakendamise aja ning serveriaja."
 
 15\. **Arendusressurss**. Lihtsa elutukse lisamine peaks olema triviaalne. Täpsema ja usaldusväärsema olekuteabe tootmine aga nõuab ulatuslikuma enesediagnostika sisseehitamist, samuti meetodeid välisteenuste ülevaloleku kontrollimiseks. Praktiline lähenemine seetõttu võiks olla elutukse funktsionaalsuse arendamisel arvestada ka arendusressurssi. 
+
+## Viiteid
+
+- [MicroProfile Health](https://github.com/eclipse/microprofile-health), elutukse protokoll ja vorming (_wireformat_).
+- [Hazelcast health check](http://docs.hazelcast.org/docs/latest/manual/html-single/#health-check).
+
