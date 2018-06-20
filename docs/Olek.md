@@ -76,7 +76,25 @@ Plaan peab tegelikkusega kokku minema. Seetõttu on **süsteemi oleku väljaselg
 - jälgida süsteemi _de facto_ käitumist ja tuletada sellest teooria süsteemi seisundi kohta
 - küsida kasutajatelt
 
-**Dashboard**. Levinud idealisatsioon on süsteemi "olekulaud" - keskne koht, kuhu - automaatselt või automaagiliselt kõik vajalik teave kokku jookseb.
+**Tegelik olek** on süsteemi seisund tegeliku, reaalse kasutamise vaatepunktist. **Kavandatav olek** on olek, milleni tulevikus (võimalik, et arendus- ja paigaldustööde tulemusena) tahetakse jõuda. **Minevikuolek** on varasem olek (mis siiski pakub mingit huvi, võimalik, et tahame säilitada sinna tagasipöördumise võimalust). Kui süsteemi või süsteemiosa erinevaid olekuid on vaja eristada, siis tuleb rakendada **versioonihaldust**.
 
+**Dashboard**. Levinud idealisatsioon on süsteemi "olekulaud" - keskne koht, kuhu - automaatselt või automaagiliselt kõik vajalik teave kokku jookseb ja mis annab ajakohase, üldistatud, aga samas ka detailse pildi süsteemi seisundist.
+
+Sellist pilti on raske, võib-olla võimatu saavutada. Tänapäeva süsteemid on ühe enam hajussüsteemid. Hajussüsteemil ei saa olla täielikku tsentraalset kirjeldust. Hajussüsteemil ei saa ka olla kõikenägevat ja -teadvat haldurit. **Konfiguratsioonikirjeldus** on tekstiline või visuaalne, masin- või/ja inimloetav kirjeldus süsteemi koosseisust ja seadistusest. Suures süsteemis on mitmeid konfiguratsioonikirjeldusi. Nende sükroonimine, nii omavahel kui ka tegeliku süsteemiga, toimub alati mingi **lõtkuga**. Peaks vaatama, et lõtk liiga suureks ei läheks.
+
+Kokkuvõte. Olulised küsimused on:
+- Mis seisundis (olekus) on süsteem?
+- Mis seisundis (olekus) on süsteemi iga komponent v osa?
+- Mis on paigaldatud?
+- Kas süsteem töötab?
+- Millised süsteemi osad ei tööta?
+- Mis on muutunud?
+- Milliseid teisi osi mõjutab muutus süsteemi ühes osas?
+
+Paigaldamine on süsteemi tööseisundisse ülespanek, aga ka süsteemi osade hilisem väljavahetamine. Siia juurde käib seadistamine.
+
+Selleks, et olulised küsimused leiaksid vastused, tuleb sisse seada adekvaatsed protseduurid, rutiinid, töökorraldus. Süsteemi tegemiseks vajame omakorda "süsteemi".
+
+Selle süsteemi tegemiseks tuleks eelkõige mõelda oma peaga, lähtuda oma süsteemi vajadustest ja tiimi võimalustest. Mitte lähtuda valmismudelitest nagu ITIL™, konfiguratsiooni-, muudatuste- ja paljud muud -haldused. Mitte lähtuda moodsatest töövahenditest. Süsteemiarenduse traditsioonilises mudelis on teostusele eelnenud projekteerimine, projekteerimisele aga analüüs. **Analüüsi** vajavad ka sellised pealispinnal triviaalsed tegevused nagu paigaldamine ja seadistamine.
 
 
