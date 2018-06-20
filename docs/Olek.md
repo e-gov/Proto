@@ -5,6 +5,10 @@ footer: true
 
 # Süsteemi seisundist ja paigaldamisest
 
+Priit Parmakson
+
+20.06.2018
+
 Levinud ettekujutuse kohaselt on paigaldamine süsteemi viimine **nullolekust** (puhas, uus masin) ettenähtud, nõuetekohasesse **tööolekusse**. Tegelikult on paigaldamisel rohkem vorme. Näiteks, paigaldamise üks erijuht on süsteemi või süsteemiosa kustutamine. Kustutamisel, vastupidi, alustatakse tööolekust ja lõpetatakse nullolekus.
 
 Levinud ideaalmudeli kohaselt saab paigaldamise lõppedes süsteem olla ühes kahest olekust – kas ettenähtud tööolekus või tagasi nullolekus. Esimesel juhul öeldakse, et paigaldus **õnnestus**. Teisel juhul paigaldamine **ebaõnnestus**.
