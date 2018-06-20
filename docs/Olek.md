@@ -3,7 +3,7 @@ permalink: Olek
 footer: true
 ---
 
-# Süsteemi seisundist ja paigaldamisest
+# Paigaldamisest ja seadistamisest
 
 Priit Parmakson
 
