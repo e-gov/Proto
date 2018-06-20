@@ -71,7 +71,7 @@ Op-süsteemi versiooniuuendus nõuab VM kogu sisu uuestipaigaldamist. Seda võib
 - kuidas see mõjutab teisi komponente?
 - mis on lähteolek?
 
-Viimane küsimus on on oluline alati, kui me just uuesti nullist ei taha alustada.
+Viimane küsimus on oluline alati, kui me just uuesti nullist ei taha alustada.
 
 Plaan peab tegelikkusega kokku minema. Seetõttu on **süsteemi oleku väljaselgitamine** igasuguse paigaldamise (aga samuti seadistamise) lähtekoht. Süsteemi oleku väljaselgitamiseks on mitmeid võimalusi:
 - kasutada süsteemi sisseehitatud olekupäringut vm diagnostikavahendit. Nt: `--version` (versioonipäring komponendi poole käsurealt), heartbeat-päring vms
