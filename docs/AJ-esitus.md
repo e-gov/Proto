@@ -7,7 +7,7 @@ permalink: AJ-esitus
 
 _kontseptsioon ja tehniline lahendus_
 
-12.06.2018
+21.06.2018
 
 - TOC
 {:toc}
