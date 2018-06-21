@@ -76,7 +76,7 @@ Viimane küsimus on oluline alati, kui me just uuesti nullist ei taha alustada.
 Plaan peab tegelikkusega kokku minema. Seetõttu on **süsteemi oleku väljaselgitamine** igasuguse paigaldamise (aga samuti seadistamise) lähtekoht. Süsteemi oleku väljaselgitamiseks on mitmeid võimalusi:
 - kasutada süsteemi sisseehitatud olekupäringut vm diagnostikavahendit. Nt: `--version` (versioonipäring komponendi poole käsurealt), heartbeat-päring vms
 - tutvuda konfiguratsiooni- vm kirjeldusega – kui need on olemas ja ajakohased
-- uurida varasemate paigaldus- ja seadistustoimingute logidega, märkmetega vms jälgedega (kuid need on olemas, ülesleitavad ja dateeritavad)
+- uurida varasemaid paigaldus- ja seadistustoimingute logisid, märkmeid vms jälgi (kui need on olemas, ülesleitavad ja dateeritavad)
 - jälgida süsteemi _de facto_ käitumist ja tuletada sellest teooria süsteemi seisundi kohta
 - küsida kasutajatelt
 

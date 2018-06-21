@@ -2,24 +2,32 @@
 permalink: AJ-esitus
 ---
 
-# AJ esitusteenus
+# AJ esitusteenus uuendamine
 {: .no_toc}
 
-_arenduskava_
+_kontseptsioon ja tehniline lahendus_
 
 12.06.2018
 
-<img src='img/AJ-ESITUS.PNG' style='width:700px;'>
+- TOC
+{:toc}
+
+## Ülevaade
 
 Andmejälgija, [https://github.com/e-gov/AJ](https://github.com/e-gov/AJ), (AJ), on standardne protokoll ja tarkvara, mille paigaldamisega saab asutus kodanikule pakkuda ülevaadet (logi) kodaniku isikuandmete kasutamisest.
 
 AJ esitusteenus võimaldab kodanikul tutvuda kõigi andmekogude AJ-logidega. Esitusteenust pakub eesti.ee.
 
-Eesmärk (III-IV kv 2018) on uuendada praegust piiratud võimalustega ja vananenud platvormil toimivat eesti.ee AJ esitusteenust:
-- võimaldada kodanikule päringuid üle kõigi andmekogude
-- uuendada platvorm.
+## Arenduseesmärgid
 
-Ideaallahenduse (vt joonis) põhiomadused:
+Eesmärk (III-IV kv 2018) on uuendada praegust piiratud võimalustega ja vananenud platvormil toimivat eesti.ee AJ esitusteenust:
+
+1. võimaldada kodanikule
+  1. päringuid üle kõigi andmekogude logide
+  2. logide filterdamist
+3. uuendada tehniline platvorm.
+
+## Tehnilised tingimused
 
 1 | Kodanik (andmesubjekt) saab ühtse, agregaatlogi, mis koondab andmeid kõigist AJ toetusega andmekogudest
 2 | AJ esitusteenust pakutakse eesti.ee domeeninime all
@@ -30,13 +38,15 @@ Ideaallahenduse (vt joonis) põhiomadused:
 7 | sirvikus töötav komponent on lahendatud ühelehelahendusena (SPA). Vajadusel kasutatakse sobivat veebiraamistikku, nt Angular.
 8 | AJ esitusteenust seadistatakse konfiguratsioonifaili abil. Eraldi haldusliidest ei tehta.
 9 | AJ on võimeline edastama statistikateavet - push välisesse statistikakogumisteenusesse.
-
-Statistikakogumise vajadus analüüsitakse läbi. Statistikakogumine ei tohi saada andmekaitseliseks ohuks.
-{:.note}
-
 10 | AJ on võimeline väljastama elutukseteavet välisesse monitooringusüsteemi.
 
-NB! Ettevaatust sõltuvuste lisamisega! Kõik absoluutselt mittevajalik on ballast.
-{:.adv}
-
 AJ esitusteenus tõenäoliselt ei ole nii suur, et vääriks omaette (duubeldatud) masinat, andmebaasi jms. AJ esitusteenus peab sobituma eesti.ee kujundusloogikasse ja kasutaja liikumine portaali erinevate teenuste vahel ei tohi olla tõkestatud. Samas tuleks vältida seoseid komponentidega, mis ei ole absoluutselt vajalikud.
+
+## Arhitektuuriskeem
+
+<img src='img/AJ-ESITUS.PNG' style='width:700px;'>
+
+## Muutelugu
+
+21.06.2018 | lisatud
+12.06.2018 | esimene versioon
