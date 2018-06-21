@@ -2,7 +2,7 @@
 permalink: AJ-esitus
 ---
 
-# AJ esitusteenus uuendamine
+# Andmejälgija esitusteenuse uuendamine
 {: .no_toc}
 
 _kontseptsioon ja tehniline lahendus_
