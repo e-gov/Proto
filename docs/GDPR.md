@@ -49,7 +49,7 @@ Viimane aga eeldab standardsete GDPR-komponentide turu tekkimist. Nõudmine teki
 
 Ühe USA pilveteenuste startup-i CTO ütles, et õigesti projekteeritud infosüsteemis on juba kõik GDPR-omadused olemas. Sellisel juhul tekivad GDPR-võimekused orgaaniliselt, hea analüüsi- ja projekteerimispraktika tulemusena. Kuid meie süsteemid ei ole veel nii kõrgel tasemel.
 
-Mis vormides turg areneb, on raske ennustada. Kas tekivad GDPR-_compliant_ tooted või eraldi lahendused või mõlemad. Kuid GDPR-turu perspektiivsuses pole kahtlust. 
+Mis vormides turg areneb, on raske ennustada. Kas tekivad GDPR _compliant_ tooted või eraldi lahendused või mõlemad. Kuid GDPR-turu perspektiivsuses pole kahtlust. 
 
 Millised GDPR-lahendusi avalikule sektorile praegu pakutakse? Kui vaadata ülaltoodud küsimuste lõikes, siis tabel saab üsna tühi:
 
