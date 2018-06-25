@@ -6,6 +6,8 @@ permalink: GDPR
 
 25.06.2018
 
+Priit Parmakson
+
 Andmekaitse õiguslikele (ühtne andmekaitsemäärus) ja organisatsioonilistele meetmetele (andmekaitseesindaja, DPO määramine) peavad lisanduma tehnilised meetmed. Millised need on? 
 
 Mida on vaja?
@@ -54,19 +56,19 @@ nr | küsimus | lahendus
 2  | Mis andmeid (andmekategooriaid) te minu kohta oma süsteemides hoiate? | [RIHA](http://www.riha.ee/) - RIHAsse laetakse üles andmekogu andmekoosseis (andmekategooriate tasemel).
 3  | Mis andmeid te konkreetselt minu kohta oma süsteemides hoiate? | 
 4  | Mida need andmed tähendavad? | 
-4  | Millistes teie süsteemides on minu kohta andmeid? | 
-5  | Milleks te minu kohta käivaid andmeid kasutate? | [RIHA](http://www.riha.ee/) - sisaldab viiteid Riigi Teatajasse andmekogu põhimäärusele.
-6  | Kellele olete minu kohta käivaid andmeid edastanud? | [Andmejälgija (AJ)](https://github.com/e-gov/AJ).
-7  | Kes on minu andmeid vaadanud? | [Andmejälgija (AJ)](https://github.com/e-gov/AJ) - kui on seadistatud andmevaatamiste logimiseks.
-8  | Kas minu andmeid on kombineeritud teiste andmetega? | [RIHA](http://www.riha.ee/) - sisaldab viiteid Riigi Teatajasse andmekogu põhimäärusele. Põhimäärus peab andma vastuse.
-9  | Kustutage palun minu andmed? | 
-10 | Mille alusel (mis õigusega) te minu kohta andmeid kogute? | [RIHA](http://www.riha.ee/) - sisaldab viiteid Riigi Teatajasse andmekogu põhimäärusele. Põhimäärus ise on õigusakt ja sisaldab viidet kõrgemale õigusaktile (seadusele).
-11 | Kas minu andmete töötlus teie süsteemides on seaduslik? | vt eelmine küsimus
-12 | Kas minu andmete töötlus teie süsteemides on minimaalne (õiguspäraste eesmärkide suhtes) | Vastuse peab andma isikuandmete töötluse mõjuanalüüs. Mõjuanalüüsi võib olla otstarbekas esitada tabelina.
-13 | Kas minu andmed on kaitstud? | 
-13 | Kas olete teie andmete töötlemisega nõus? | 
-14 | Kas soovite, et lõpetaksime teie andmete töötlemise? | 
-15 | Palun kontrollige, et teie andmed on õiged? | 
+5  | Millistes teie süsteemides on minu kohta andmeid? | 
+6  | Milleks te minu kohta käivaid andmeid kasutate? | [RIHA](http://www.riha.ee/) - sisaldab viiteid Riigi Teatajasse andmekogu põhimäärusele.
+7  | Kellele olete minu kohta käivaid andmeid edastanud? | [Andmejälgija (AJ)](https://github.com/e-gov/AJ).
+8  | Kes on minu andmeid vaadanud? | [Andmejälgija (AJ)](https://github.com/e-gov/AJ) - kui on seadistatud andmevaatamiste logimiseks.
+9  | Kas minu andmeid on kombineeritud teiste andmetega? | [RIHA](http://www.riha.ee/) - sisaldab viiteid Riigi Teatajasse andmekogu põhimäärusele. Põhimäärus peab andma vastuse.
+10  | Kustutage palun minu andmed? | 
+11 | Mille alusel (mis õigusega) te minu kohta andmeid kogute? | [RIHA](http://www.riha.ee/) - sisaldab viiteid Riigi Teatajasse andmekogu põhimäärusele. Põhimäärus ise on õigusakt ja sisaldab viidet kõrgemale õigusaktile (seadusele).
+12 | Kas minu andmete töötlus teie süsteemides on seaduslik? | vt eelmine küsimus
+13 | Kas minu andmete töötlus teie süsteemides on minimaalne (õiguspäraste eesmärkide suhtes) | Vastuse peab andma isikuandmete töötluse mõjuanalüüs. Mõjuanalüüsi võib olla otstarbekas esitada tabelina.
+14 | Kas minu andmed on kaitstud? | 
+15 | Kas olete teie andmete töötlemisega nõus? | 
+16 | Kas soovite, et lõpetaksime teie andmete töötlemise? | 
+17 | Palun kontrollige, et teie andmed on õiged? | 
 
 Informatiseerimise ja automatiseerimise võimalusi on praktiliselt kõigi küsimuste juures. Andmesubjekte, kes kõik on potentsiaalsed küsijad, on palju. Ilma IT-ga s.o käsitsitööga ei ole  küsimused vastatavad.
 
