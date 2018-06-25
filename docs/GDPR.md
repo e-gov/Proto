@@ -4,6 +4,8 @@ permalink: GDPR
 
 # GDPR-lahenduste turust
 
+25.06.2018
+
 Andmekaitse õiguslikele (ühtne andmekaitsemäärus) ja organisatsioonilistele meetmetele (andmekaitseesindaja, DPO määramine) peavad lisanduma tehnilised meetmed. Millised need on? 
 
 Mida on vaja?
