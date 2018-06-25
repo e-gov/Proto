@@ -12,7 +12,9 @@ Andmekaitse õiguslikele (ühtne andmekaitsemäärus) ja organisatsioonilistele 
 
 Mida on vaja?
 
-Andmesubjekt võib küsida:
+Võtame andmesubjekti võimalikud küsimused asutusele. Neile peab vastama.
+
+Andmesubjekt võib küsida tervet rida küsimusi:
 
 nr | küsimus | ootus
 1  | Kas teie süsteemis on minu kohta andmeid? | Oodatakse selget, lühikest, jah-või-ei vastust.
