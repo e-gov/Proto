@@ -2,7 +2,7 @@
 permalink: Kodanik
 ---
 
-# Kodaniku küsimused isikuandmete halduse kohta
+# Isikuandmete haldus. Kodaniku küsimused
 
 ## 1 Mida te minu kohta teate?
 
