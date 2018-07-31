@@ -1,6 +1,5 @@
 ---
 permalink: Konfiguratsioonihaldus
-footer: true
 ---
 
 ## Küsimused

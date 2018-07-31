@@ -1,4 +1,3 @@
-# 
 repo: "https://github.com/e-gov/Proto"
 baseurl: "https://e-gov.github.io/Proto"
 
@@ -8,6 +7,4 @@ defaults:
       path: "" # Kõik failid
     values:
       layout: "Times"
-    page:
-      header: false  
 

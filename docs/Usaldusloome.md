@@ -1,5 +1,5 @@
 ---
-Usaldus
+permalink: Usaldus
 ---
 
 # Võtmed ja usaldus

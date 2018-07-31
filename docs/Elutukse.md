@@ -1,6 +1,5 @@
 ---
 permalink: Elutukse
-footer: true
 ---
 
 # Elutukse

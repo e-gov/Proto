@@ -1,6 +1,5 @@
 ---
 permalink: 
-header: false
 ---
 
 Kavandeid ja prototüüpe

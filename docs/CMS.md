@@ -1,6 +1,5 @@
 ---
 permalink: CMS
-header: false
 ---
 
 # eesti.ee tarkvara valikust

@@ -1,6 +1,5 @@
 ---
 permalink: Olek
-footer: true
 ---
 
 # Paigaldamisest ja seadistamisest

@@ -1,5 +1,5 @@
 ---
-permalink: Vastastikuna
+permalink: Vastastikune
 ---
 
 # Mikroteenuste kaitse

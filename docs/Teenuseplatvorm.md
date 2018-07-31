@@ -1,6 +1,5 @@
 ---
 permalink: Teenuseplatvorm
-layout: Suur
 ---
 
 # Teenuseplatvormi kontseptsioon

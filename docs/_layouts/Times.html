@@ -4,31 +4,22 @@
 <!-- Navigeerimispäisega leht. -->
 
 <head>
-  <title>Proto</title>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ site.baseurl }}/css/Times.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/Colourful.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/Github.css">
 
 </head>
 
 <body>
-  {% if page.header %}
-    {% include Pais.html %}
-  {% else %}
-    <div style='margin-bottom: 2rem;'>&nbsp;</div>
-  {% endif %}
-
+  {% include Pais.html %}
+  
   <div id='Tekst'>      
     {{ content }}
   </div>
   
-{% if page.header or page.footer %}
   {% include Jalus.html %}
-{% endif %}
-
 </body>
 
 </html>

@@ -1,6 +1,5 @@
 ---
 permalink: Soltuvused
-header: false
 ---
 
 # Tarkvarasõltuvustest (ja nende ravist)
