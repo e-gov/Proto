@@ -9,5 +9,5 @@ defaults:
     values:
       layout: "Times"
     page:
-      header: true  
+      header: false  
 
