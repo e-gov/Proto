@@ -16,16 +16,11 @@ Oodatakse metaandmeid e üldistust, mitte detailseid, konkreetseid andmeväärtu
 
 *  _Mis andmeid te konkreetselt minu kohta oma süsteemides hoiate?_
 
-Nõutakse detailset andmekogumit. Ka siin on võimalik meta- ja konkreetnet tasand: hoiame sinu isikukoodi _versus_ hoiame isikukoodi `36107120334`.
+Nõutakse detailset andmekogumit. Ka siin on võimalik meta- ja konkreetne tasand: hoiame sinu isikukoodi _versus_ hoiame isikukoodi `36107120334`.
 
 * _Millistes teie süsteemides on minu kohta andmeid?_
 
 Oodatakse süsteeminimede loetelu. Peab olema arusaadav, mis on iga süsteemi eesmärk.
-
-
-* _Mida need andmed tähendavad?_
-
-Küsimus tekib, kui küsimuse nr 3 vastus ei ole arusaadav (arusaamatu kodeering, kontekstiteabe puudumine vms).
 
 ## 2 Kes ja milleks minu andmeid kasutab?
 
@@ -63,9 +58,9 @@ Koos isiku äranäitamisega, kellelt juurdepääs ära võtta.
 
 * _Mille alusel (mis õigusega) te minu kohta andmeid kogute?_
 
-Küsimus võib järgneda jätkuna küsimustele nr 1-7. Vastamiseks on vaja siduda süsteemid, andmekategooriad ja/või andmekirjed õiguslikku alust loovate õigusaktidega.
+Vastamiseks on vaja siduda süsteemid, andmekategooriad ja/või andmekirjed õiguslikku alust loovate õigusaktidega.
 
-* _Kas minu andmete töötlus teie süsteemides on seaduslik?_ Sarnane küsimusega nr 10-ga, kuid terviku vaatenurgast.
+* _Kas minu andmete töötlus teie süsteemides on seaduslik?_ Sarnane eelmise küsimusega, kuid terviku vaatenurgast.
 
 * _Kas minu andmete töötlus teie süsteemides on minimaalne (õiguspäraste eesmärkide suhtes)?_
 
@@ -81,7 +76,11 @@ Oodatakse kinnitust, et isiku andmed on tõesti kaitstud - või teavet rikkumist
 
 * _Kas keegi on teie süsteemis minu nimel tegutsenud?_
 
-## 5 Kas minu andmed on õiged?
+## 5 Andmete tähendus ja õigsus
+
+* _Mida need andmed tähendavad?_
+
+Küsimus tekib, kui andmed ei ole arusaadavad (arusaamatu kodeering, kontekstiteabe puudumine vms).
 
 * _Kas minu kohta hoitavad andmed on õiged?_
 
