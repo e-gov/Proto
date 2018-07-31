@@ -1,23 +1,27 @@
 ---
-permalink: Kodanik
+permalink: GDPR
 ---
 
-# Tehnilised lahendused kodanike GDPR-küsimustele vastamiseks 
+# Kodanike GDPR-küsimused ja tehnilised lahendused neile vastamiseks
 
-Kodaniku andmed peavad olema hallatud andmete kogu elutsükli (-käigu) vaates. Kodanik võib selles veendumiseks küsida alljärgnevaid küsimusi. Ühtse andmekaitsemääruse (GDPR) valguses tuleb neile küsimustele leida vastused. Vastamist hõlbustavad tehnilised lahendused. (Kuid ükski tehniline lahendus ei tööta ilma organisatsiooniliste meetmeteta). RIA ülesanne võiks olla välja pakkuda asutuseüleseid tehnilisi lahendusi - seal, kus need on võimalikud ja tõhusad.
+25.06.2018, täiendatud 31.07.2018<br>
+Priit Parmakson
 
-Seda võiks [Andmejälgija (AJ)](https://github.com/e-gov/AJ) edasiarendamisel arvestada. Võib-olla kujuneb tootepere? Praegu AJ annab vastuseid küsimustele:
+# Ülevaade
 
-- Mis andmeid ja kellele olete andmekogust X-tee kaudu minu kohta edastanud?
-- Kes on minu andmeid vaadanud? - kui [Andmejälgija (AJ)](https://github.com/e-gov/AJ) on seadistatud andmevaatamiste logimiseks.
+Dokument kaardistab küsimusi, mis kodanikul tema isikuandmete kasutamise kohta võivad tekkida.
 
-[RIHA](http://www.riha.ee/) pakub:
-- Mis andmeid (andmekategooriaid) te minu kohta oma süsteemides hoiate? - üldistatud, konkreetse isikuga mitteseotud vastus - kui andmekogu andmekoosseis on RIHAs kirjeldatud.
-- Mille alusel (mis õigusega) te minu kohta andmeid kogute? - RIHA sisaldab viiteid Riigi Teatajasse andmekogu põhimäärusele. Põhimäärus ise on õigusakt ja sisaldab viidet kõrgemale õigusaktile (seadusele).
-- Kellel on juurdepääs minu andmetele? - Võib olla kirjeldatud andmekogu põhimääruses.
+Näitame, millistele neist küsimustest olemasolevad asutuseülesed tehnilised lahendused -  [Andmejälgija (AJ)](https://github.com/e-gov/AJ) ja [RIHA](http://www.riha.ee/) - praegu suudavad vastuseid pakkuda.
 
+Kaardistus võib olla kasulik AJ ja RIHA edasiarenduste, aga samuti võimalike uute tehniliste lahenduste kavandamisel.
 
-## 1 Mida te minu kohta teate?
+RIA ülesanne võiks olla välja pakkuda asutuseüleseid tehnilisi lahendusi - seal, kus need on võimalikud ja tõhusad.
+
+## Küsimused
+
+Kodaniku andmed peavad olema hallatud andmete kogu elutsükli (-käigu) vaates. Kodanik võib selles veendumiseks küsida alljärgnevaid küsimusi. Ühtse andmekaitsemääruse (GDPR) valguses tuleb neile küsimustele leida vastused. Vastamist hõlbustavad tehnilised lahendused. (Kuid ükski tehniline lahendus ei tööta ilma organisatsiooniliste meetmeteta).
+
+### 1 Mida te minu kohta teate?
 
 1.1 _Kas teie süsteemis on minu kohta andmeid?_ Oodatakse selget, lühikest, jah-või-ei vastust.
 
@@ -27,7 +31,9 @@ Seda võiks [Andmejälgija (AJ)](https://github.com/e-gov/AJ) edasiarendamisel a
 
 1.4 _Millistes teie süsteemides on minu kohta andmeid?_ Oodatakse süsteeminimede loetelu. Peab olema arusaadav, mis on iga süsteemi eesmärk.
 
-## 2 Kes ja milleks minu andmeid kasutab?
+1.5 _Väljastage palun mulle minu andmed_ Soovitavalt masinloetaval kujul - et oleks võimalik andmeid teise süsteemi üle kanda.
+
+### 2 Kes ja milleks minu andmeid kasutab?
 
 2.1  _Milleks te minu kohta käivaid andmeid kasutate?_ Oodatakse põhjendust, andmekasutuse sisulist äraseletamist.
 
@@ -45,7 +51,7 @@ Seda võiks [Andmejälgija (AJ)](https://github.com/e-gov/AJ) edasiarendamisel a
 
 2.8 _Sulgege juurdepääs minu andmetele!_ Koos isiku äranäitamisega, kellelt juurdepääs ära võtta.
 
-## 3 Õiguspärasus
+### 3 Õiguspärasus
 
 3.1 _Mille alusel (mis õigusega) te minu kohta andmeid kogute?_ Vastamiseks on vaja siduda süsteemid, andmekategooriad ja/või andmekirjed õiguslikku alust loovate õigusaktidega.
 
@@ -53,7 +59,7 @@ Seda võiks [Andmejälgija (AJ)](https://github.com/e-gov/AJ) edasiarendamisel a
 
 3.3 _Kas minu andmete töötlus teie süsteemides on minimaalne (õiguspäraste eesmärkide suhtes)?_ Tõenäoliselt ei oska inimene seda küsida. Siiski on see oluline küsimus.
 
-## 4 Kas minu andmed on kaitstud?
+### 4 Kas minu andmed on kaitstud?
 
 4.1 _Kas minu andmed on lekkinud või muul viisil leidnud väärkasutust?_ 
 
@@ -61,7 +67,7 @@ Seda võiks [Andmejälgija (AJ)](https://github.com/e-gov/AJ) edasiarendamisel a
 
 4.3 _Kas keegi on teie süsteemis minu nimel tegutsenud?_
 
-## 5 Andmete tähendus ja õigsus
+### 5 Andmete tähendus ja õigsus
 
 5.1 _Mida need andmed tähendavad?_ Küsimus tekib, kui andmed ei ole arusaadavad (arusaamatu kodeering, kontekstiteabe puudumine vms).
 
@@ -71,9 +77,24 @@ Seda võiks [Andmejälgija (AJ)](https://github.com/e-gov/AJ) edasiarendamisel a
 
 5.4 _Sulgege juurdepääs minu andmetele?_
 
-## 6 Kustutamine
+### 6 Kustutamine
 
 6.1  _Kustutage palun minu andmed!_ See ei ole infopäring, vaid korraldus. Vastuseks oodatakse kinnitust, et kõik andmed on kustutatud.
 
 6.2 _Kas olete minu andmed kustutanud?_ 
 
+## Tehnilised lahendused
+
+### Andmejälgija
+
+Praegu [Andmejälgija (AJ)](https://github.com/e-gov/AJ) annab vastuseid küsimustele:
+
+- Mis andmeid ja kellele olete andmekogust X-tee kaudu minu kohta edastanud?
+- Kes on minu andmeid vaadanud? - kui [Andmejälgija (AJ)](https://github.com/e-gov/AJ) on seadistatud andmevaatamiste logimiseks.
+
+### RIHA
+
+[RIHA](http://www.riha.ee/) pakub:
+- Mis andmeid (andmekategooriaid) te minu kohta oma süsteemides hoiate? - üldistatud, konkreetse isikuga mitteseotud vastus - kui andmekogu andmekoosseis on RIHAs kirjeldatud.
+- Mille alusel (mis õigusega) te minu kohta andmeid kogute? - RIHA sisaldab viiteid Riigi Teatajasse andmekogu põhimäärusele. Põhimäärus ise on õigusakt ja sisaldab viidet kõrgemale õigusaktile (seadusele).
+- Kellel on juurdepääs minu andmetele? - Võib olla kirjeldatud andmekogu põhimääruses.

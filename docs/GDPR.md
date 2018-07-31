@@ -1,5 +1,5 @@
 ---
-permalink: GDPR
+permalink: GDPR-turust
 ---
 
 # GDPR-lahenduste turust
