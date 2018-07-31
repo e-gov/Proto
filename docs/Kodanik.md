@@ -4,6 +4,8 @@ permalink: Kodanik
 
 # Kodaniku küsimused isikuandmete halduse kohta
 
+## 1 Mida te minu kohta teate?
+
 * _Kas teie süsteemis on minu kohta andmeid?_
 
 Oodatakse selget, lühikest, jah-või-ei vastust.
@@ -25,9 +27,13 @@ Oodatakse süsteeminimede loetelu. Peab olema arusaadav, mis on iga süsteemi ee
 
 Küsimus tekib, kui küsimuse nr 3 vastus ei ole arusaadav (arusaamatu kodeering, kontekstiteabe puudumine vms).
 
+## 2 Kes ja milleks minu andmeid kasutab?
+
 *  _Milleks te minu kohta käivaid andmeid kasutate?_
 
 Oodatakse põhjendust, andmekasutuse sisulist äraseletamist.
+
+* _Kellel on juurdepääs minu andmetele?*
 
 *  _Kellele olete minu kohta käivaid andmeid edastanud?_
 
@@ -37,17 +43,23 @@ Oodatakse detailset andmeedastuse logi.
 
 Oodatakse detailset andmevaatamiste logi.
 
+* _Kuidas ma ise teie süsteemi olen kasutanud?_
+
+Kodanik soovib näha oma süsteemikasutuse ajalugu.
+
 *  _Kas minu andmeid on kombineeritud teiste andmetega?_
 
 Oodatakse kinnitust, et andmeid hoitakse eraldi või teavet kombineerimise kohta.
 
-*  _Kustutage palun minu andmed!_
+* _Avage juurdepääs minu andmetele!_
 
-See ei ole infopäring, vaid korraldus. Vastuseks oodatakse kinnitust, et kõik andmed on kustutatud.
+Koos isiku äranäitamisega, kellele juurdepääs avada.
 
-* _Kas olete minu andmed kustutanud?_
+* _Sulgege juurdepääs minu andmetele!_
 
-Küsimus on järg eelmisele küsimusele. 
+Koos isiku äranäitamisega, kellelt juurdepääs ära võtta.
+
+## 3 Õiguspärasus
 
 * _Mille alusel (mis õigusega) te minu kohta andmeid kogute?_
 
@@ -59,6 +71,8 @@ Küsimus võib järgneda jätkuna küsimustele nr 1-7. Vastamiseks on vaja sidud
 
 Tõenäoliselt ei oska inimene seda küsida. Siiski on see oluline küsimus.
 
+## 4 Kas minu andmed on kaitstud?
+
 * _Kas minu andmed on lekkinud või muul viisil leidnud väärkasutust?_
 
 * _Kas minu andmed on kaitstud?_
@@ -67,24 +81,23 @@ Oodatakse kinnitust, et isiku andmed on tõesti kaitstud - või teavet rikkumist
 
 * _Kas keegi on teie süsteemis minu nimel tegutsenud?_
 
-* _Kuidas ma teie süsteemi olen kasutanud?_
-
-Kodanik soovib näha oma süsteemikasutuse ajalugu.
-
-* _Kellel on juurdepääs minu andmetele?*
-
-* _Annan ligipääsu X-le oma andmetele_
-
-* _Võtan X-lt ligipääsu oma andmetele_
+## 5 Kas minu andmed on õiged?
 
 * _Kas minu kohta hoitavad andmed on õiged?_
 
-Loogilise järeldusena - parandage minu andmed!
+Loogilise järeldusena:
 
-## Andmetöötleja ise võib küsida:
+* _Parandage minu andmed!_
 
-nr | küsimus | iseloomustus
-15 | Kas olete teie andmete töötlemisega nõus? | Andmesubjekti nõusoleku võtmine.
-16 | Kas soovite, et lõpetaksime teie andmete töötlemise? | Nõusoleku tagasivõtmine.
-17 | Palun kontrollige, et teie andmed on õiged! | 
+* _Sulgege juurdepääs minu andmetele?_
+
+## 6 Kustutamine
+
+*  _Kustutage palun minu andmed!_
+
+See ei ole infopäring, vaid korraldus. Vastuseks oodatakse kinnitust, et kõik andmed on kustutatud.
+
+* _Kas olete minu andmed kustutanud?_
+
+Küsimus on järg eelmisele küsimusele. 
 
