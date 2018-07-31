@@ -15,11 +15,11 @@ Näitame, millistele neist küsimustest olemasolevad asutuseülesed tehnilised l
 
 Kaardistus võib olla kasulik AJ ja RIHA edasiarenduste, aga samuti võimalike uute tehniliste lahenduste kavandamisel.
 
-RIA ülesanne võiks olla välja pakkuda asutuseüleseid tehnilisi lahendusi - seal, kus need on võimalikud ja tõhusad.
+RIA roll võiks olla välja pakkuda asutuseüleseid tehnilisi lahendusi - seal, kus need on võimalikud ja tõhusad.
 
 ## Küsimused
 
-Kodaniku andmed peavad olema hallatud andmete kogu elutsükli (-käigu) vaates. Kodanik võib selles veendumiseks küsida alljärgnevaid küsimusi. Ühtse andmekaitsemääruse (GDPR) valguses tuleb neile küsimustele leida vastused. Vastamist hõlbustavad tehnilised lahendused. (Kuid ükski tehniline lahendus ei tööta ilma organisatsiooniliste meetmeteta).
+Kodaniku andmed peavad olema hallatud andmete kogu elutsükli (-käigu) vaates. Selles veendumiseks võib kodanik küsida alljärgnevaid küsimusi. Ühtse andmekaitsemääruse (GDPR) valguses tuleb  küsimustele leida vastused. Vastamine ise tähendab andmetöötlust - sageli keerukat ja suuremahulist. Seetõttu on oluline leida hõlbustavaid tehnilisi lahendusi - või küsimused jäävad vastamata.
 
 ### 1 Mida te minu kohta teate?
 
@@ -85,16 +85,16 @@ Kodaniku andmed peavad olema hallatud andmete kogu elutsükli (-käigu) vaates. 
 
 ## Tehnilised lahendused
 
-### Andmejälgija
+### 1 Andmejälgija
 
 Praegu [Andmejälgija (AJ)](https://github.com/e-gov/AJ) annab vastuseid küsimustele:
 
 - Mis andmeid ja kellele olete andmekogust X-tee kaudu minu kohta edastanud?
 - Kes on minu andmeid vaadanud? - kui [Andmejälgija (AJ)](https://github.com/e-gov/AJ) on seadistatud andmevaatamiste logimiseks.
 
-### RIHA
+### 2 RIHA
 
-[RIHA](http://www.riha.ee/) pakub:
-- Mis andmeid (andmekategooriaid) te minu kohta oma süsteemides hoiate? - üldistatud, konkreetse isikuga mitteseotud vastus - kui andmekogu andmekoosseis on RIHAs kirjeldatud.
-- Mille alusel (mis õigusega) te minu kohta andmeid kogute? - RIHA sisaldab viiteid Riigi Teatajasse andmekogu põhimäärusele. Põhimäärus ise on õigusakt ja sisaldab viidet kõrgemale õigusaktile (seadusele).
-- Kellel on juurdepääs minu andmetele? - Võib olla kirjeldatud andmekogu põhimääruses.
+[RIHA](http://www.riha.ee/) pakub (põhimõtteliselt peaks pakkuma) vastuseid küsimustele:
+- (1.2) Mis andmeid (andmekategooriaid) te minu kohta oma süsteemides hoiate? - üldistatud, konkreetse isikuga mitteseotud vastus - kui andmekogu andmekoosseis on RIHAs kirjeldatud.
+- (3.1) Mille alusel (mis õigusega) te minu kohta andmeid kogute? - RIHA sisaldab viiteid Riigi Teatajasse andmekogu põhimäärusele. Põhimäärus ise on õigusakt ja sisaldab viidet kõrgemale õigusaktile (seadusele).
+- (2.2) Kellel on juurdepääs minu andmetele? - Võib olla kirjeldatud andmekogu põhimääruses.
