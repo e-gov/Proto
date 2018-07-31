@@ -31,7 +31,7 @@ Kodaniku andmed peavad olema hallatud andmete kogu elutsükli (-käigu) vaates. 
 
 1.4 _Millistes teie süsteemides on minu kohta andmeid?_ Oodatakse süsteeminimede loetelu. Peab olema arusaadav, mis on iga süsteemi eesmärk.
 
-1.5 _Väljastage palun mulle minu andmed_ Soovitavalt masinloetaval kujul - et oleks võimalik andmeid teise süsteemi üle kanda.
+1.5 _Väljastage palun mulle minu andmed!_ Soovitavalt masinloetaval kujul - et oleks võimalik andmeid teise süsteemi üle kanda.
 
 ### 2 Kes ja milleks minu andmeid kasutab?
 
@@ -89,8 +89,8 @@ Kodaniku andmed peavad olema hallatud andmete kogu elutsükli (-käigu) vaates. 
 
 Praegu [Andmejälgija (AJ)](https://github.com/e-gov/AJ) annab vastuseid küsimustele:
 
-- Mis andmeid ja kellele olete andmekogust X-tee kaudu minu kohta edastanud?
-- Kes on minu andmeid vaadanud? - kui [Andmejälgija (AJ)](https://github.com/e-gov/AJ) on seadistatud andmevaatamiste logimiseks.
+- (2.3) Mis andmeid ja kellele olete andmekogust X-tee kaudu minu kohta edastanud?
+- (2.4) Kes on minu andmeid vaadanud? - kui [Andmejälgija (AJ)](https://github.com/e-gov/AJ) on seadistatud andmevaatamiste logimiseks.
 
 ### 2 RIHA
 
